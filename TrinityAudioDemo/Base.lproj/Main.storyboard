@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eNR-Ie-L7l">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrinityAudioDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-aI-Z71">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXQ-yY-Wdb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2115"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artificial Intelligence Is Too Important to Leave to Google and Facebook Alone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhD-tj-JsI">
+                                                <rect key="frame" x="15" y="15" width="384" height="138.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s develop a public research consortium to take on useful projects that have no commercial prospects." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E16-lt-iC9">
+                                                <rect key="frame" x="15" y="163.5" width="384" height="75.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="articleImg" translatesAutoresizingMaskIntoConstraints="NO" id="lwG-eD-5FB">
+                                                <rect key="frame" x="15" y="249" width="384" height="255"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="lwG-eD-5FB" secondAttribute="height" multiplier="268:178" id="1hA-Ms-ij9"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Deep Blue Technology self-driving bus at the World Artificial Intelligence Conference in Shanghai last May." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8u-Cs-Y8P">
+                                                <rect key="frame" x="15" y="509" width="384" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9w-Oh-2tF">
+                                                <rect key="frame" x="15" y="557.5" width="384" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="4OC-sZ-yam"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMU-DA-Uxe">
+                                                <rect key="frame" x="15" y="632.5" width="384" height="1432.5"/>
+                                                <string key="text">Americans don’t have to be beholden to the tech Goliaths to get the benefits of artificial intelligence. An alternative possibility is for government to provide the infrastructure needed for a technological future — through a public option for artificial intelligence.Big tech companies have an extraordinary amount of data about how we behave, largely because they engage in  widespread surveillance of much of our behavior. Because A.I. depends on data, these companies have a huge market advantage over start-ups and entrepreneurs — and it’s a gap that will only get wider.The lax regulatory environment hasn’t helped, either; instead, it has allowed the biggest tech companies to acquire their rivals, stifle competition and snatch up the best software engineers and data scientists. Together, these dynamics make it hard for start-ups, governments and nonprofits to develop and use artificial intelligence without relying on big tech companies, effectively ceding influence over this developing field to a private sphere distorted by anti-competitive practices.\n\n\nThe alternative is a public option for A.I. The public option, a term familiar from debates over health care, is a public program that provides universal access to goods and services, with a private opt-out. A public option for A.I. wouldn’t prevent companies like Google from collecting and using data. But it would provide a pathway for start-ups and public-sector organizations to develop abilities and products that would compete with those of the tech giants. Although the Trump administration released an executive order on A.I. this year, we believe that a broader conceptual framework for the public option for A.I. — coupled with significant financial resources from Congress — is an opportunity for all levels of government to take control of technology for their constituents and engage them deeply in the development of the rules by which it is governed and used.\n\n\nOur proposal has three components: The first is a public data pool that would make data accessible to registered users. Local, state and federal governments have sizable data resources that would seed this digital commons. Users would be verified to block foreign governments, hackers and others with ill motives from access, and users would be prevented from using the data to engage in racial or other forms of discrimination and for microtargeted advertising.\n\n\nSome of the data may be very sensitive, and access to those resources would be highly regulated. We can imagine a variety of ways that regulation and technology together could protect privacy and still foster innovation: Data could be anonymized at the source; the commons could have an interface that allowed users to derive insight from the data set, while leaving the underlying information inaccessible; less sensitive data, like weather information, could be made available in a format optimized for training A.I. What’s more,methods for safely sharing A.I. models without disclosing the underlying data are being developed today and could enable users of the data commons to collaborate on public-interest A.I. services. The federal government should also invest in researching new and better ways to protect privacy and prevent misuse.\n\n\nSecond, a public option for artificial intelligence would include a significant increase in research and development spending. Proponents of big tech celebrate private-sector research and are right to do so. But big tech companies, like all companies, have an incentive to fund research that will support their bottom line,and the profit motive doesn’t always mean a focus on the most important problems.</string>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="n9w-Oh-2tF" secondAttribute="trailing" constant="15" id="12J-bb-0gT"/>
+                                            <constraint firstItem="TMU-DA-Uxe" firstAttribute="top" secondItem="n9w-Oh-2tF" secondAttribute="bottom" constant="15" id="2sD-fM-Mfy"/>
+                                            <constraint firstItem="n9w-Oh-2tF" firstAttribute="leading" secondItem="KXQ-yY-Wdb" secondAttribute="leading" constant="15" id="3Bl-Pn-9eK"/>
+                                            <constraint firstItem="TMU-DA-Uxe" firstAttribute="trailing" secondItem="n9w-Oh-2tF" secondAttribute="trailing" id="47h-7E-IGJ"/>
+                                            <constraint firstItem="E16-lt-iC9" firstAttribute="top" secondItem="LhD-tj-JsI" secondAttribute="bottom" constant="10" id="7Yw-E0-NZD"/>
+                                            <constraint firstItem="E16-lt-iC9" firstAttribute="trailing" secondItem="LhD-tj-JsI" secondAttribute="trailing" id="ATt-mP-mOi"/>
+                                            <constraint firstAttribute="trailing" secondItem="LhD-tj-JsI" secondAttribute="trailing" constant="15" id="NC4-os-rXm"/>
+                                            <constraint firstItem="E8u-Cs-Y8P" firstAttribute="leading" secondItem="lwG-eD-5FB" secondAttribute="leading" id="ODo-vw-khu"/>
+                                            <constraint firstItem="LhD-tj-JsI" firstAttribute="top" secondItem="KXQ-yY-Wdb" secondAttribute="top" constant="15" id="ONe-6s-NXt"/>
+                                            <constraint firstItem="TMU-DA-Uxe" firstAttribute="leading" secondItem="n9w-Oh-2tF" secondAttribute="leading" id="PCg-5i-Dtu"/>
+                                            <constraint firstItem="E8u-Cs-Y8P" firstAttribute="top" secondItem="lwG-eD-5FB" secondAttribute="bottom" constant="5" id="RWP-ZU-3mo"/>
+                                            <constraint firstItem="lwG-eD-5FB" firstAttribute="top" secondItem="E16-lt-iC9" secondAttribute="bottom" constant="10" id="TRQ-Ej-D5y"/>
+                                            <constraint firstItem="E16-lt-iC9" firstAttribute="leading" secondItem="LhD-tj-JsI" secondAttribute="leading" id="VhA-Iy-fqY"/>
+                                            <constraint firstAttribute="bottom" secondItem="TMU-DA-Uxe" secondAttribute="bottom" constant="50" id="f2u-Uu-TYp"/>
+                                            <constraint firstItem="E8u-Cs-Y8P" firstAttribute="trailing" secondItem="lwG-eD-5FB" secondAttribute="trailing" id="kAE-pL-1QE"/>
+                                            <constraint firstItem="n9w-Oh-2tF" firstAttribute="top" secondItem="E8u-Cs-Y8P" secondAttribute="bottom" constant="15" id="m4g-te-hkO"/>
+                                            <constraint firstItem="lwG-eD-5FB" firstAttribute="leading" secondItem="KXQ-yY-Wdb" secondAttribute="leading" constant="15" id="u7R-u7-oge"/>
+                                            <constraint firstItem="LhD-tj-JsI" firstAttribute="leading" secondItem="KXQ-yY-Wdb" secondAttribute="leading" constant="15" id="uxN-Sg-G0L"/>
+                                            <constraint firstAttribute="trailing" secondItem="lwG-eD-5FB" secondAttribute="trailing" constant="15" id="yV2-My-UQb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="KXQ-yY-Wdb" firstAttribute="top" secondItem="TIM-aI-Z71" secondAttribute="top" id="CgQ-J6-2Qm"/>
+                                    <constraint firstAttribute="trailing" secondItem="KXQ-yY-Wdb" secondAttribute="trailing" id="QoQ-X7-nxS"/>
+                                    <constraint firstItem="KXQ-yY-Wdb" firstAttribute="leading" secondItem="TIM-aI-Z71" secondAttribute="leading" id="RYb-HF-4cJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="KXQ-yY-Wdb" secondAttribute="bottom" id="RZU-aB-oLy"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3at-l1-z20" appends="YES" id="68I-1d-FV6"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TIM-aI-Z71" secondAttribute="bottom" id="3mI-Cl-8xJ"/>
+                            <constraint firstItem="KXQ-yY-Wdb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="250" id="Oed-nn-DsL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TIM-aI-Z71" secondAttribute="trailing" id="Paz-Xz-KU9"/>
+                            <constraint firstItem="TIM-aI-Z71" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qke-Is-slS"/>
+                            <constraint firstItem="TIM-aI-Z71" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ygg-ln-891"/>
+                            <constraint firstItem="KXQ-yY-Wdb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="yoR-Ag-aY4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="A5s-sK-8jR"/>
+                    <connections>
+                        <outlet property="descriptionText" destination="TMU-DA-Uxe" id="l42-Kq-prj"/>
+                        <outlet property="playerView" destination="n9w-Oh-2tF" id="f3t-W1-dkr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="3at-l1-z20">
+                    <connections>
+                        <action selector="swipeAction:" destination="BYZ-38-t0r" id="8uf-sn-U5e"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="923.1884057971015" y="51.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kSX-bA-Iol">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eNR-Ie-L7l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BSY-zC-ZG7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Bem-qR-dzN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfd-Fp-wXv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="51.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PK0-od-zqN">
+            <objects>
+                <viewController storyboardIdentifier="FABViewController" id="vJ3-ye-sGa" customClass="FABViewController" customModule="TrinityAudioDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sgu-tI-DLP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGe-d9-7oc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFH-dR-o7o">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2115"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artificial Intelligence Is Too Important to Leave to Google and Facebook Alone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPi-Oh-Iki">
+                                                <rect key="frame" x="15" y="15" width="384" height="138.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s develop a public research consortium to take on useful projects that have no commercial prospects." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDm-mO-rOH">
+                                                <rect key="frame" x="15" y="163.5" width="384" height="75.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="articleImg" translatesAutoresizingMaskIntoConstraints="NO" id="E35-lf-vOe">
+                                                <rect key="frame" x="15" y="249" width="384" height="255"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="E35-lf-vOe" secondAttribute="height" multiplier="268:178" id="wYD-AW-zNK"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Deep Blue Technology self-driving bus at the World Artificial Intelligence Conference in Shanghai last May." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzI-Ve-5tS">
+                                                <rect key="frame" x="15" y="509" width="384" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wU-aP-z6z">
+                                                <rect key="frame" x="15" y="557.5" width="384" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Szm-uh-ve4"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfA-M6-sg6">
+                                                <rect key="frame" x="15" y="632.5" width="384" height="1432.5"/>
+                                                <string key="text">Americans don’t have to be beholden to the tech Goliaths to get the benefits of artificial intelligence. An alternative possibility is for government to provide the infrastructure needed for a technological future — through a public option for artificial intelligence.Big tech companies have an extraordinary amount of data about how we behave, largely because they engage in  widespread surveillance of much of our behavior. Because A.I. depends on data, these companies have a huge market advantage over start-ups and entrepreneurs — and it’s a gap that will only get wider.The lax regulatory environment hasn’t helped, either; instead, it has allowed the biggest tech companies to acquire their rivals, stifle competition and snatch up the best software engineers and data scientists. Together, these dynamics make it hard for start-ups, governments and nonprofits to develop and use artificial intelligence without relying on big tech companies, effectively ceding influence over this developing field to a private sphere distorted by anti-competitive practices.\n\n\nThe alternative is a public option for A.I. The public option, a term familiar from debates over health care, is a public program that provides universal access to goods and services, with a private opt-out. A public option for A.I. wouldn’t prevent companies like Google from collecting and using data. But it would provide a pathway for start-ups and public-sector organizations to develop abilities and products that would compete with those of the tech giants. Although the Trump administration released an executive order on A.I. this year, we believe that a broader conceptual framework for the public option for A.I. — coupled with significant financial resources from Congress — is an opportunity for all levels of government to take control of technology for their constituents and engage them deeply in the development of the rules by which it is governed and used.\n\n\nOur proposal has three components: The first is a public data pool that would make data accessible to registered users. Local, state and federal governments have sizable data resources that would seed this digital commons. Users would be verified to block foreign governments, hackers and others with ill motives from access, and users would be prevented from using the data to engage in racial or other forms of discrimination and for microtargeted advertising.\n\n\nSome of the data may be very sensitive, and access to those resources would be highly regulated. We can imagine a variety of ways that regulation and technology together could protect privacy and still foster innovation: Data could be anonymized at the source; the commons could have an interface that allowed users to derive insight from the data set, while leaving the underlying information inaccessible; less sensitive data, like weather information, could be made available in a format optimized for training A.I. What’s more,methods for safely sharing A.I. models without disclosing the underlying data are being developed today and could enable users of the data commons to collaborate on public-interest A.I. services. The federal government should also invest in researching new and better ways to protect privacy and prevent misuse.\n\n\nSecond, a public option for artificial intelligence would include a significant increase in research and development spending. Proponents of big tech celebrate private-sector research and are right to do so. But big tech companies, like all companies, have an incentive to fund research that will support their bottom line,and the profit motive doesn’t always mean a focus on the most important problems.</string>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="fzI-Ve-5tS" firstAttribute="trailing" secondItem="E35-lf-vOe" secondAttribute="trailing" id="1lP-UZ-ASH"/>
+                                            <constraint firstItem="MDm-mO-rOH" firstAttribute="leading" secondItem="GPi-Oh-Iki" secondAttribute="leading" id="8ww-5j-6qS"/>
+                                            <constraint firstItem="kfA-M6-sg6" firstAttribute="leading" secondItem="0wU-aP-z6z" secondAttribute="leading" id="AwH-Vt-Xth"/>
+                                            <constraint firstItem="kfA-M6-sg6" firstAttribute="trailing" secondItem="0wU-aP-z6z" secondAttribute="trailing" id="EOx-jg-mwF"/>
+                                            <constraint firstItem="E35-lf-vOe" firstAttribute="top" secondItem="MDm-mO-rOH" secondAttribute="bottom" constant="10" id="ETq-Dt-hYr"/>
+                                            <constraint firstItem="MDm-mO-rOH" firstAttribute="trailing" secondItem="GPi-Oh-Iki" secondAttribute="trailing" id="JbK-1E-8QJ"/>
+                                            <constraint firstItem="GPi-Oh-Iki" firstAttribute="top" secondItem="bFH-dR-o7o" secondAttribute="top" constant="15" id="Jga-Pg-hgP"/>
+                                            <constraint firstItem="kfA-M6-sg6" firstAttribute="top" secondItem="0wU-aP-z6z" secondAttribute="bottom" constant="15" id="ODI-0x-rmU"/>
+                                            <constraint firstItem="MDm-mO-rOH" firstAttribute="top" secondItem="GPi-Oh-Iki" secondAttribute="bottom" constant="10" id="PYv-4b-krZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="E35-lf-vOe" secondAttribute="trailing" constant="15" id="QKl-L4-fVF"/>
+                                            <constraint firstItem="GPi-Oh-Iki" firstAttribute="leading" secondItem="bFH-dR-o7o" secondAttribute="leading" constant="15" id="QhO-4U-FJG"/>
+                                            <constraint firstAttribute="trailing" secondItem="GPi-Oh-Iki" secondAttribute="trailing" constant="15" id="RsD-nj-AvD"/>
+                                            <constraint firstAttribute="bottom" secondItem="kfA-M6-sg6" secondAttribute="bottom" constant="50" id="SQM-HK-KhC"/>
+                                            <constraint firstItem="fzI-Ve-5tS" firstAttribute="top" secondItem="E35-lf-vOe" secondAttribute="bottom" constant="5" id="TYA-x1-TPW"/>
+                                            <constraint firstItem="fzI-Ve-5tS" firstAttribute="leading" secondItem="E35-lf-vOe" secondAttribute="leading" id="aWa-Ty-mDS"/>
+                                            <constraint firstItem="E35-lf-vOe" firstAttribute="leading" secondItem="bFH-dR-o7o" secondAttribute="leading" constant="15" id="dSq-GV-Ol0"/>
+                                            <constraint firstItem="0wU-aP-z6z" firstAttribute="leading" secondItem="bFH-dR-o7o" secondAttribute="leading" constant="15" id="tw5-xL-Z50"/>
+                                            <constraint firstAttribute="trailing" secondItem="0wU-aP-z6z" secondAttribute="trailing" constant="15" id="v4k-RP-VAb"/>
+                                            <constraint firstItem="0wU-aP-z6z" firstAttribute="top" secondItem="fzI-Ve-5tS" secondAttribute="bottom" constant="15" id="w1b-H1-KbD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="bFH-dR-o7o" firstAttribute="top" secondItem="YGe-d9-7oc" secondAttribute="top" id="Nvf-C4-cAe"/>
+                                    <constraint firstAttribute="bottom" secondItem="bFH-dR-o7o" secondAttribute="bottom" id="kc6-LS-o97"/>
+                                    <constraint firstAttribute="trailing" secondItem="bFH-dR-o7o" secondAttribute="trailing" id="lDo-5E-CeF"/>
+                                    <constraint firstItem="bFH-dR-o7o" firstAttribute="leading" secondItem="YGe-d9-7oc" secondAttribute="leading" id="qgl-7a-G70"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yQm-AD-NTr" appends="YES" id="0Gj-9R-qhR"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rgy-tr-vBf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bFH-dR-o7o" firstAttribute="width" secondItem="Sgu-tI-DLP" secondAttribute="width" id="Chz-Yy-RMF"/>
+                            <constraint firstItem="bFH-dR-o7o" firstAttribute="height" secondItem="Sgu-tI-DLP" secondAttribute="height" priority="250" id="RqA-pt-fgP"/>
+                            <constraint firstItem="rgy-tr-vBf" firstAttribute="trailing" secondItem="YGe-d9-7oc" secondAttribute="trailing" id="VCj-QZ-KCQ"/>
+                            <constraint firstItem="YGe-d9-7oc" firstAttribute="leading" secondItem="rgy-tr-vBf" secondAttribute="leading" id="ctR-ZL-SzH"/>
+                            <constraint firstItem="rgy-tr-vBf" firstAttribute="bottom" secondItem="YGe-d9-7oc" secondAttribute="bottom" id="dqg-Gr-GP1"/>
+                            <constraint firstItem="YGe-d9-7oc" firstAttribute="top" secondItem="rgy-tr-vBf" secondAttribute="top" id="ezm-pD-OKM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionText" destination="kfA-M6-sg6" id="3fh-gD-eV7"/>
+                        <outlet property="playerView" destination="0wU-aP-z6z" id="N86-5a-vGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRV-vv-ff3" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="yQm-AD-NTr">
+                    <connections>
+                        <action selector="swipeBackAction:" destination="vJ3-ye-sGa" id="TVG-Da-sQZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1990" y="61"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="articleImg" width="1024" height="683"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
