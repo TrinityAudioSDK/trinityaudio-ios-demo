@@ -2,7 +2,7 @@
 //  TAConstants.swift
 //  TrinityAudioDemo
 //
-//  Created by Jigar Thakkar on 10/04/2021.
+//  Created by ios developer on 10/04/2021.
 //
 
 import Foundation

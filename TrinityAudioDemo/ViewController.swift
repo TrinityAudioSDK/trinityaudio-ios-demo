@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  TrinityAudioDemo
 //
-//  Created by Jigar Thakkar on 08/04/2021.
+//  Created by ios developer on 08/04/2021.
 //
 
 import UIKit
