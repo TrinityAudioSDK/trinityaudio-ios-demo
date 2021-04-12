@@ -53,8 +53,13 @@ class FABViewController: UIViewController {
     func showPlayer() {
         let coordinates = CGPoint(x: 30, y: self.view.frame.height-100)
         if let url = URL(string: TAConstants.shared.contentURL) {
-            // Pass nil for non FAB in fabViewTopLeftCoordingates parameter
-            audio!.render(parentViewController: self, unitId: TAConstants.shared.unitID, sourceView: self.playerView, fabViewTopLeftCoordinates: coordinates, contentURL:url, settings: nil)
+            // Pass coordinates to render the FAB icon 
+            audio!.render(parentViewController: self, 
+            unitId: TAConstants.shared.unitID, 
+            sourceView: self.playerView, 
+            fabViewTopLeftCoordinates: coordinates, 
+            contentURL:url, 
+            settings: nil)
         }
     }
 }
@@ -74,6 +79,5 @@ extension FABViewController: TrinityAudioDelegate {
         print(cookieData)
     }
 }
-
 
 
