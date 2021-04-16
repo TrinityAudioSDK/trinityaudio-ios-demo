@@ -35,7 +35,7 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="articleImg" translatesAutoresizingMaskIntoConstraints="NO" id="lwG-eD-5FB">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article-img-1" translatesAutoresizingMaskIntoConstraints="NO" id="lwG-eD-5FB">
                                                 <rect key="frame" x="15" y="249" width="384" height="255"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="lwG-eD-5FB" secondAttribute="height" multiplier="268:178" id="1hA-Ms-ij9"/>
@@ -168,7 +168,7 @@
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="articleImg" translatesAutoresizingMaskIntoConstraints="NO" id="E35-lf-vOe">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article-img-1" translatesAutoresizingMaskIntoConstraints="NO" id="E35-lf-vOe">
                                                 <rect key="frame" x="15" y="249" width="384" height="255"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="E35-lf-vOe" secondAttribute="height" multiplier="268:178" id="wYD-AW-zNK"/>
@@ -258,7 +258,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="articleImg" width="1024" height="683"/>
+        <image name="article-img-1" width="1024" height="683"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
