@@ -55,11 +55,11 @@ class ViewController: UIViewController {
     func showPlayer() {
         if let url = URL(string: TAConstants.shared.contentURL) {
             // Pass nil for non FAB in fabViewTopLeftCoordingates parameter
-            audio!.render(parentViewController: self, 
-            unitId: TAConstants.shared.unitID, 
-            sourceView: self.playerView, 
-            fabViewTopLeftCoordinates: nil, 
-            contentURL:url, 
+            audio!.render(parentViewController: self,
+            unitId: TAConstants.shared.unitID,
+            sourceView: self.playerView,
+            fabViewTopLeftCoordinates: nil,
+            contentURL:url,
             settings: nil)
         }
     }
@@ -80,3 +80,4 @@ extension ViewController: TrinityAudioDelegate {
         print(cookieData)
     }
 }
+
