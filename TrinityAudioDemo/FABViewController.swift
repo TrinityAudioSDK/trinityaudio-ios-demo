@@ -78,6 +78,10 @@ extension FABViewController: TrinityAudioDelegate {
     func trinity(service: TrinityAudioProtocol, didCheckCookie cookieData: [String : Any]) {
         print(cookieData)
     }
+    
+    func trinity(service: TrinityAudioProtocol, didReceivePostMessage message: [String : Any]) {
+        print(message)
+    }
 }
 
 

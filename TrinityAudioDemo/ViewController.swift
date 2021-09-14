@@ -13,9 +13,12 @@ class ViewController: UIViewController {
 
     @IBOutlet var playerView: UIView!
     @IBOutlet weak var descriptionText: UILabel!
+    @IBOutlet var eventsView: UITextView!
     
     // Init Trinity Audio Player
     var audio: TrinityAudioProtocol?
+    
+    private var events = [[String: Any]]()
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -78,6 +81,18 @@ extension ViewController: TrinityAudioDelegate {
     
     func trinity(service: TrinityAudioProtocol, didCheckCookie cookieData: [String : Any]) {
         print(cookieData)
+    }
+
+    func trinity(service: TrinityAudioProtocol, didReceivePostMessage message: [String : Any]) {
+        print(message)
+        
+        events.append(message)
+        
+        if
+            let eventsData = try? JSONSerialization.data(withJSONObject: events, options: [.prettyPrinted, .withoutEscapingSlashes]) {
+            let eventsText = String(data: eventsData, encoding: .utf8)
+            eventsView.text = eventsText
+        }
     }
 }
 
