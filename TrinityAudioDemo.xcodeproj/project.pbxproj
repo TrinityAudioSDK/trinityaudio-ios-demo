@@ -14,8 +14,8 @@
 		259B27E526299AAA0037C114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259B27E326299AAA0037C114 /* LaunchScreen.storyboard */; };
 		259B27EE26299AE40037C114 /* FABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259B27ED26299AE40037C114 /* FABViewController.swift */; };
 		259B27F226299AEA0037C114 /* TAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259B27F126299AEA0037C114 /* TAConstants.swift */; };
-		259B27F626299BBA0037C114 /* TrinityAudioSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 259B27F526299BBA0037C114 /* TrinityAudioSDK */; };
 		259B27FA26299BF30037C114 /* AppContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259B27F926299BF30037C114 /* AppContent.swift */; };
+		94F4DB732AA4D7AB00080288 /* TrinityPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 94F4DB722AA4D7AB00080288 /* TrinityPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				259B27F626299BBA0037C114 /* TrinityAudioSDK in Frameworks */,
+				94F4DB732AA4D7AB00080288 /* TrinityPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,10 +105,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				94F4DB702AA4CC8000080288 /* PBXTargetDependency */,
 			);
 			name = TrinityAudioDemo;
 			packageProductDependencies = (
-				259B27F526299BBA0037C114 /* TrinityAudioSDK */,
+				94F4DB722AA4D7AB00080288 /* TrinityPlayer */,
 			);
 			productName = TrinityAudioDemo;
 			productReference = 259B27D526299AAA0037C114 /* TrinityAudioDemo.app */;
@@ -138,7 +139,7 @@
 			);
 			mainGroup = 259B27CC26299AAA0037C114;
 			packageReferences = (
-				259B27F426299BBA0037C114 /* XCRemoteSwiftPackageReference "trinityaudio-ios-sdk" */,
+				94F4DB712AA4D7AB00080288 /* XCRemoteSwiftPackageReference "trinityaudio-ios-sdk" */,
 			);
 			productRefGroup = 259B27D626299AAA0037C114 /* Products */;
 			projectDirPath = "";
@@ -176,6 +177,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94F4DB702AA4CC8000080288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 94F4DB6F2AA4CC8000080288 /* TrinityPlayer */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		259B27DE26299AAA0037C114 /* Main.storyboard */ = {
@@ -319,7 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6JL7UN6UZC;
+				DEVELOPMENT_TEAM = R8NK7PBBD4;
 				INFOPLIST_FILE = TrinityAudioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6JL7UN6UZC;
+				DEVELOPMENT_TEAM = R8NK7PBBD4;
 				INFOPLIST_FILE = TrinityAudioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,13 +391,26 @@
 				kind = branch;
 			};
 		};
+		94F4DB712AA4D7AB00080288 /* XCRemoteSwiftPackageReference "trinityaudio-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TrinityAudioSDK/trinityaudio-ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		259B27F526299BBA0037C114 /* TrinityAudioSDK */ = {
+		94F4DB6F2AA4CC8000080288 /* TrinityPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 259B27F426299BBA0037C114 /* XCRemoteSwiftPackageReference "trinityaudio-ios-sdk" */;
-			productName = TrinityAudioSDK;
+			productName = TrinityPlayer;
+		};
+		94F4DB722AA4D7AB00080288 /* TrinityPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94F4DB712AA4D7AB00080288 /* XCRemoteSwiftPackageReference "trinityaudio-ios-sdk" */;
+			productName = TrinityPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

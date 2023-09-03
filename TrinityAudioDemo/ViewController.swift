@@ -8,6 +8,7 @@
 import UIKit
 import TrinityPlayer
 import WebKit
+import AppTrackingTransparency
 
 class ViewController: UIViewController {
 
@@ -28,7 +29,28 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupTrinityPlayer()
+        // If you don't need tracking the user using the IDFA, just call
+        // setupTrinityPlayer()
+        switch ATTrackingManager.trackingAuthorizationStatus {
+        case .authorized, .denied:
+            setupTrinityPlayer()
+        default:
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                ATTrackingManager.requestTrackingAuthorization { [weak self]  status in
+                    switch status {
+                    case .authorized:
+                        print("enable tracking")
+                    case .denied:
+                        print("disable tracking")
+                    default:
+                        print("notDetermined or restricted tracking")
+                    }
+                    DispatchQueue.main.async {
+                        self?.setupTrinityPlayer()
+                    }
+                }
+            })
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -58,12 +80,11 @@ class ViewController: UIViewController {
     func showPlayer() {
         if let url = URL(string: TAConstants.shared.contentURL) {
             // Pass nil for non FAB in fabViewTopLeftCoordingates parameter
-
             audio!.render(parentViewController: self,
-            unitId: TAConstants.shared.unitID,
-            sourceView: self.playerView,
-            fabViewTopLeftCoordinates: nil,
-            contentURL:url,settings: nil)
+                          unitId: TAConstants.shared.unitID,
+                          sourceView: self.playerView,
+                          fabViewTopLeftCoordinates: nil,
+                          contentURL:url,settings: nil)
         }
     }
 }
@@ -82,7 +103,7 @@ extension ViewController: TrinityAudioDelegate {
     func trinity(service: TrinityAudioProtocol, didCheckCookie cookieData: [String : Any]) {
         print(cookieData)
     }
-
+    
     func trinity(service: TrinityAudioProtocol, didReceivePostMessage message: [String : Any]) {
         print(message)
         
