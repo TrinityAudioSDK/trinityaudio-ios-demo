@@ -14,7 +14,7 @@ class FABViewController: UIViewController {
     @IBOutlet weak var descriptionText: UILabel!
     
     // Init Trinity Audio Player
-    var audio: TrinityAudioProtocol?
+    var audio: UIKitTrinityAudioProtocol?
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {

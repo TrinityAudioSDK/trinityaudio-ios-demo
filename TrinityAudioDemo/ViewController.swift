@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var eventsView: UITextView!
     
     // Init Trinity Audio Player
-    var audio: TrinityAudioProtocol?
+    var audio: UIKitTrinityAudioProtocol?
     
     private var events = [[String: Any]]()
     
