@@ -107,12 +107,15 @@ extension ViewController: TrinityAudioDelegate {
     func trinity(service: TrinityAudioProtocol, didReceivePostMessage message: [String : Any]) {
         print(message)
         
-        events.append(message)
-        
-        if
-            let eventsData = try? JSONSerialization.data(withJSONObject: events, options: [.prettyPrinted, .withoutEscapingSlashes]) {
-            let eventsText = String(data: eventsData, encoding: .utf8)
-            eventsView.text = eventsText
+        DispatchQueue.global(qos: .background).async { [weak self] in
+            self?.events.append(message)
+            if  let input = self?.events,
+                let eventsData = try? JSONSerialization.data(withJSONObject: input, options: [.prettyPrinted, .withoutEscapingSlashes]) {
+                let eventsText = String(data: eventsData, encoding: .utf8)
+                DispatchQueue.main.async {
+                    self?.eventsView.text = eventsText
+                }
+            }
         }
     }
 }
