@@ -59,9 +59,6 @@ class ViewController: UIViewController {
         self.audio?.invalidate()
     }
     
-    // MARK: - Navigation Action
-    @IBAction func swipeAction(_ sender: Any) {}
-    
     // MARK: - View Helper Methods
     func setupUI() {
         self.descriptionText.text = AppContent.shared.article
