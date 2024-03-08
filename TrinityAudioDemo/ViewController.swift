@@ -60,10 +60,7 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Navigation Action
-    @IBAction func swipeAction(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "FABViewController") as! FABViewController
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
+    @IBAction func swipeAction(_ sender: Any) {}
     
     // MARK: - View Helper Methods
     func setupUI() {
@@ -80,10 +77,11 @@ class ViewController: UIViewController {
     func showPlayer() {
         if let url = URL(string: TAConstants.shared.contentURL) {
             // Pass nil for non FAB in fabViewTopLeftCoordingates parameter
+            let coordinates = CGPoint(x: 30, y: self.view.frame.height-100)
             audio!.render(parentViewController: self,
                           unitId: TAConstants.shared.unitID,
                           sourceView: self.playerView,
-                          fabViewTopLeftCoordinates: nil,
+                          fabViewTopLeftCoordinates: coordinates,
                           contentURL:url,settings: nil)
         }
     }
