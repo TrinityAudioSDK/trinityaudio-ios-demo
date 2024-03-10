@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,6 @@
 		259B27E026299AAA0037C114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259B27DE26299AAA0037C114 /* Main.storyboard */; };
 		259B27E226299AAA0037C114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259B27E126299AAA0037C114 /* Assets.xcassets */; };
 		259B27E526299AAA0037C114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259B27E326299AAA0037C114 /* LaunchScreen.storyboard */; };
-		259B27EE26299AE40037C114 /* FABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259B27ED26299AE40037C114 /* FABViewController.swift */; };
 		259B27F226299AEA0037C114 /* TAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259B27F126299AEA0037C114 /* TAConstants.swift */; };
 		259B27FA26299BF30037C114 /* AppContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259B27F926299BF30037C114 /* AppContent.swift */; };
 		94F4DB732AA4D7AB00080288 /* TrinityPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 94F4DB722AA4D7AB00080288 /* TrinityPlayer */; };
@@ -26,7 +25,6 @@
 		259B27E126299AAA0037C114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		259B27E426299AAA0037C114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		259B27E626299AAA0037C114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		259B27ED26299AE40037C114 /* FABViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FABViewController.swift; sourceTree = "<group>"; };
 		259B27F126299AEA0037C114 /* TAConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAConstants.swift; sourceTree = "<group>"; };
 		259B27F926299BF30037C114 /* AppContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +64,6 @@
 				259B27F026299AEA0037C114 /* TrinityAudio */,
 				259B27D826299AAA0037C114 /* AppDelegate.swift */,
 				259B27DC26299AAA0037C114 /* ViewController.swift */,
-				259B27ED26299AE40037C114 /* FABViewController.swift */,
 				259B27DE26299AAA0037C114 /* Main.storyboard */,
 				259B27E126299AAA0037C114 /* Assets.xcassets */,
 				259B27E326299AAA0037C114 /* LaunchScreen.storyboard */,
@@ -172,7 +169,6 @@
 				259B27DD26299AAA0037C114 /* ViewController.swift in Sources */,
 				259B27FA26299BF30037C114 /* AppContent.swift in Sources */,
 				259B27D926299AAA0037C114 /* AppDelegate.swift in Sources */,
-				259B27EE26299AE40037C114 /* FABViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

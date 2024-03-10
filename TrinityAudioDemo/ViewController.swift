@@ -59,12 +59,6 @@ class ViewController: UIViewController {
         self.audio?.invalidate()
     }
     
-    // MARK: - Navigation Action
-    @IBAction func swipeAction(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "FABViewController") as! FABViewController
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
     // MARK: - View Helper Methods
     func setupUI() {
         self.descriptionText.text = AppContent.shared.article
@@ -80,10 +74,11 @@ class ViewController: UIViewController {
     func showPlayer() {
         if let url = URL(string: TAConstants.shared.contentURL) {
             // Pass nil for non FAB in fabViewTopLeftCoordingates parameter
+            let coordinates = CGPoint(x: 30, y: self.view.frame.height-100)
             audio!.render(parentViewController: self,
                           unitId: TAConstants.shared.unitID,
                           sourceView: self.playerView,
-                          fabViewTopLeftCoordinates: nil,
+                          fabViewTopLeftCoordinates: coordinates,
                           contentURL:url,settings: nil)
         }
     }
@@ -107,12 +102,15 @@ extension ViewController: TrinityAudioDelegate {
     func trinity(service: TrinityAudioProtocol, didReceivePostMessage message: [String : Any]) {
         print(message)
         
-        events.append(message)
-        
-        if
-            let eventsData = try? JSONSerialization.data(withJSONObject: events, options: [.prettyPrinted, .withoutEscapingSlashes]) {
-            let eventsText = String(data: eventsData, encoding: .utf8)
-            eventsView.text = eventsText
+        DispatchQueue.global(qos: .background).async { [weak self] in
+            self?.events.append(message)
+            if  let input = self?.events,
+                let eventsData = try? JSONSerialization.data(withJSONObject: input, options: [.prettyPrinted, .withoutEscapingSlashes]) {
+                let eventsText = String(data: eventsData, encoding: .utf8)
+                DispatchQueue.main.async {
+                    self?.eventsView.text = eventsText
+                }
+            }
         }
     }
 }
