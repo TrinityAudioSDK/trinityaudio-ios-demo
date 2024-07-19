@@ -20,7 +20,7 @@ class MenuViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // If you don't need tracking the user using the IDFA with Trinity Player,
+        // If you don't tracking the user using the IDFA with Trinity Player,
         // don't need request this `TrackingAuthorization` permisison
         switch ATTrackingManager.trackingAuthorizationStatus {
         case .authorized:
