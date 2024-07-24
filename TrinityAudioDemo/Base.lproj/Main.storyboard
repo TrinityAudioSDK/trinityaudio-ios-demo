@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-aI-Z71">
-                                <rect key="frame" x="0.0" y="92" width="414" height="706"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXQ-yY-Wdb">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2350.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2390.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artificial Intelligence Is Too Important to Leave to Google and Facebook Alone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhD-tj-JsI">
                                                 <rect key="frame" x="15" y="15" width="384" height="138.5"/>
@@ -86,20 +86,26 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwL-gs-cU6">
-                                                <rect key="frame" x="15" y="717.5" width="384" height="20.5"/>
+                                                <rect key="frame" x="15" y="757.5" width="384" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Id: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNL-Cd-FPv">
+                                                <rect key="frame" x="15" y="717.5" width="384" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMU-DA-Uxe">
-                                                <rect key="frame" x="15" y="868" width="384" height="1432.5"/>
+                                                <rect key="frame" x="15" y="908" width="384" height="1432.5"/>
                                                 <string key="text">Americans don’t have to be beholden to the tech Goliaths to get the benefits of artificial intelligence. An alternative possibility is for government to provide the infrastructure needed for a technological future — through a public option for artificial intelligence.Big tech companies have an extraordinary amount of data about how we behave, largely because they engage in  widespread surveillance of much of our behavior. Because A.I. depends on data, these companies have a huge market advantage over start-ups and entrepreneurs — and it’s a gap that will only get wider.The lax regulatory environment hasn’t helped, either; instead, it has allowed the biggest tech companies to acquire their rivals, stifle competition and snatch up the best software engineers and data scientists. Together, these dynamics make it hard for start-ups, governments and nonprofits to develop and use artificial intelligence without relying on big tech companies, effectively ceding influence over this developing field to a private sphere distorted by anti-competitive practices.\n\n\nThe alternative is a public option for A.I. The public option, a term familiar from debates over health care, is a public program that provides universal access to goods and services, with a private opt-out. A public option for A.I. wouldn’t prevent companies like Google from collecting and using data. But it would provide a pathway for start-ups and public-sector organizations to develop abilities and products that would compete with those of the tech giants. Although the Trump administration released an executive order on A.I. this year, we believe that a broader conceptual framework for the public option for A.I. — coupled with significant financial resources from Congress — is an opportunity for all levels of government to take control of technology for their constituents and engage them deeply in the development of the rules by which it is governed and used.\n\n\nOur proposal has three components: The first is a public data pool that would make data accessible to registered users. Local, state and federal governments have sizable data resources that would seed this digital commons. Users would be verified to block foreign governments, hackers and others with ill motives from access, and users would be prevented from using the data to engage in racial or other forms of discrimination and for microtargeted advertising.\n\n\nSome of the data may be very sensitive, and access to those resources would be highly regulated. We can imagine a variety of ways that regulation and technology together could protect privacy and still foster innovation: Data could be anonymized at the source; the commons could have an interface that allowed users to derive insight from the data set, while leaving the underlying information inaccessible; less sensitive data, like weather information, could be made available in a format optimized for training A.I. What’s more,methods for safely sharing A.I. models without disclosing the underlying data are being developed today and could enable users of the data commons to collaborate on public-interest A.I. services. The federal government should also invest in researching new and better ways to protect privacy and prevent misuse.\n\n\nSecond, a public option for artificial intelligence would include a significant increase in research and development spending. Proponents of big tech celebrate private-sector research and are right to do so. But big tech companies, like all companies, have an incentive to fund research that will support their bottom line,and the profit motive doesn’t always mean a focus on the most important problems.</string>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aMO-6Q-vLp">
-                                                <rect key="frame" x="15" y="753" width="384" height="100"/>
+                                                <rect key="frame" x="15" y="793" width="384" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="pWT-N4-m5f"/>
@@ -120,8 +126,10 @@
                                             <constraint firstItem="E16-lt-iC9" firstAttribute="top" secondItem="LhD-tj-JsI" secondAttribute="bottom" constant="10" id="7Yw-E0-NZD"/>
                                             <constraint firstItem="jw5-sz-8Qu" firstAttribute="top" secondItem="n9w-Oh-2tF" secondAttribute="bottom" id="7in-HU-hAz"/>
                                             <constraint firstItem="E16-lt-iC9" firstAttribute="trailing" secondItem="LhD-tj-JsI" secondAttribute="trailing" id="ATt-mP-mOi"/>
-                                            <constraint firstItem="wwL-gs-cU6" firstAttribute="top" secondItem="n9w-Oh-2tF" secondAttribute="bottom" constant="80" id="BeA-Kg-Mee"/>
+                                            <constraint firstItem="XNL-Cd-FPv" firstAttribute="top" secondItem="n9w-Oh-2tF" secondAttribute="bottom" constant="80" id="Aiq-M7-pDT"/>
+                                            <constraint firstItem="wwL-gs-cU6" firstAttribute="top" secondItem="n9w-Oh-2tF" secondAttribute="bottom" constant="120" id="BeA-Kg-Mee"/>
                                             <constraint firstItem="aMO-6Q-vLp" firstAttribute="trailing" secondItem="n9w-Oh-2tF" secondAttribute="trailing" id="FJo-nj-Etj"/>
+                                            <constraint firstItem="XNL-Cd-FPv" firstAttribute="leading" secondItem="KXQ-yY-Wdb" secondAttribute="leading" constant="15" id="JF9-2d-Igw"/>
                                             <constraint firstAttribute="trailing" secondItem="LhD-tj-JsI" secondAttribute="trailing" constant="15" id="NC4-os-rXm"/>
                                             <constraint firstItem="E8u-Cs-Y8P" firstAttribute="leading" secondItem="lwG-eD-5FB" secondAttribute="leading" id="ODo-vw-khu"/>
                                             <constraint firstItem="LhD-tj-JsI" firstAttribute="top" secondItem="KXQ-yY-Wdb" secondAttribute="top" constant="15" id="ONe-6s-NXt"/>
@@ -136,6 +144,7 @@
                                             <constraint firstAttribute="bottom" secondItem="TMU-DA-Uxe" secondAttribute="bottom" constant="50" id="f2u-Uu-TYp"/>
                                             <constraint firstItem="E8u-Cs-Y8P" firstAttribute="trailing" secondItem="lwG-eD-5FB" secondAttribute="trailing" id="kAE-pL-1QE"/>
                                             <constraint firstItem="n9w-Oh-2tF" firstAttribute="top" secondItem="E8u-Cs-Y8P" secondAttribute="bottom" constant="15" id="m4g-te-hkO"/>
+                                            <constraint firstAttribute="trailing" secondItem="XNL-Cd-FPv" secondAttribute="trailing" constant="15" id="myU-Co-9Ip"/>
                                             <constraint firstItem="n9w-Oh-2tF" firstAttribute="top" secondItem="KXQ-yY-Wdb" secondAttribute="top" constant="557.5" id="r3a-Zd-hct"/>
                                             <constraint firstItem="lwG-eD-5FB" firstAttribute="leading" secondItem="KXQ-yY-Wdb" secondAttribute="leading" constant="15" id="u7R-u7-oge"/>
                                             <constraint firstItem="LhD-tj-JsI" firstAttribute="leading" secondItem="KXQ-yY-Wdb" secondAttribute="leading" constant="15" id="uxN-Sg-G0L"/>
@@ -156,7 +165,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TIM-aI-Z71" secondAttribute="bottom" constant="64" id="3mI-Cl-8xJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TIM-aI-Z71" secondAttribute="bottom" id="3mI-Cl-8xJ"/>
                             <constraint firstItem="TIM-aI-Z71" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="H6e-GS-lfx"/>
                             <constraint firstItem="KXQ-yY-Wdb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="250" id="Oed-nn-DsL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TIM-aI-Z71" secondAttribute="trailing" id="Paz-Xz-KU9"/>
@@ -168,6 +177,7 @@
                     <connections>
                         <outlet property="descriptionText" destination="TMU-DA-Uxe" id="l42-Kq-prj"/>
                         <outlet property="eventsView" destination="aMO-6Q-vLp" id="Gvc-Xn-cC0"/>
+                        <outlet property="playerIdLb" destination="XNL-Cd-FPv" id="FKZ-ev-BzR"/>
                         <outlet property="playerView" destination="n9w-Oh-2tF" id="f3t-W1-dkr"/>
                     </connections>
                 </viewController>
@@ -188,15 +198,15 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Main SDK Usage"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="45l-Jp-feA"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="42I-6m-AYn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dh-mh-Naz">
-                                <rect key="frame" x="162" y="451" width="91" height="39"/>
+                                <rect key="frame" x="161.5" y="451" width="91" height="39"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Autoplay"/>
                                 <connections>
-                                    <segue destination="96F-Jd-WMP" kind="show" identifier="autoPlayFlow" id="Jn5-6a-gWd"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="autoPlayFlow" id="GoO-de-OkQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -233,145 +243,10 @@
             </objects>
             <point key="canvasLocation" x="-1836" y="-86"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="cm3-xA-one">
-            <objects>
-                <viewController id="96F-Jd-WMP" customClass="ViewController" customModule="TrinityAudioDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="piK-Zf-N8r">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMx-5o-pHQ">
-                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvC-Ei-ENX">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2285.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artificial Intelligence Is Too Important to Leave to Google and Facebook Alone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ke-Dp-HwQ">
-                                                <rect key="frame" x="15" y="15" width="384" height="138.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s develop a public research consortium to take on useful projects that have no commercial prospects." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-KY-6Wj">
-                                                <rect key="frame" x="15" y="163.5" width="384" height="75.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="75.5" id="MsL-m1-Bbl"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article-img-1" translatesAutoresizingMaskIntoConstraints="NO" id="Adw-FB-zW9">
-                                                <rect key="frame" x="15" y="249" width="384" height="255"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Adw-FB-zW9" secondAttribute="height" multiplier="268:178" id="q8X-5p-r0U"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Deep Blue Technology self-driving bus at the World Artificial Intelligence Conference in Shanghai last May." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sob-ku-82e">
-                                                <rect key="frame" x="15" y="509" width="384" height="33.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="33.5" id="ys2-W1-XSU"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cL7-Ci-gT7">
-                                                <rect key="frame" x="15" y="557.5" width="384" height="80"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="nZt-uu-B6t"/>
-                                                </constraints>
-                                            </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LW2-1r-vQj">
-                                                <rect key="frame" x="15" y="652.5" width="384" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARa-zs-XsR">
-                                                <rect key="frame" x="15" y="803" width="384" height="1432.5"/>
-                                                <string key="text">Americans don’t have to be beholden to the tech Goliaths to get the benefits of artificial intelligence. An alternative possibility is for government to provide the infrastructure needed for a technological future — through a public option for artificial intelligence.Big tech companies have an extraordinary amount of data about how we behave, largely because they engage in  widespread surveillance of much of our behavior. Because A.I. depends on data, these companies have a huge market advantage over start-ups and entrepreneurs — and it’s a gap that will only get wider.The lax regulatory environment hasn’t helped, either; instead, it has allowed the biggest tech companies to acquire their rivals, stifle competition and snatch up the best software engineers and data scientists. Together, these dynamics make it hard for start-ups, governments and nonprofits to develop and use artificial intelligence without relying on big tech companies, effectively ceding influence over this developing field to a private sphere distorted by anti-competitive practices.\n\n\nThe alternative is a public option for A.I. The public option, a term familiar from debates over health care, is a public program that provides universal access to goods and services, with a private opt-out. A public option for A.I. wouldn’t prevent companies like Google from collecting and using data. But it would provide a pathway for start-ups and public-sector organizations to develop abilities and products that would compete with those of the tech giants. Although the Trump administration released an executive order on A.I. this year, we believe that a broader conceptual framework for the public option for A.I. — coupled with significant financial resources from Congress — is an opportunity for all levels of government to take control of technology for their constituents and engage them deeply in the development of the rules by which it is governed and used.\n\n\nOur proposal has three components: The first is a public data pool that would make data accessible to registered users. Local, state and federal governments have sizable data resources that would seed this digital commons. Users would be verified to block foreign governments, hackers and others with ill motives from access, and users would be prevented from using the data to engage in racial or other forms of discrimination and for microtargeted advertising.\n\n\nSome of the data may be very sensitive, and access to those resources would be highly regulated. We can imagine a variety of ways that regulation and technology together could protect privacy and still foster innovation: Data could be anonymized at the source; the commons could have an interface that allowed users to derive insight from the data set, while leaving the underlying information inaccessible; less sensitive data, like weather information, could be made available in a format optimized for training A.I. What’s more,methods for safely sharing A.I. models without disclosing the underlying data are being developed today and could enable users of the data commons to collaborate on public-interest A.I. services. The federal government should also invest in researching new and better ways to protect privacy and prevent misuse.\n\n\nSecond, a public option for artificial intelligence would include a significant increase in research and development spending. Proponents of big tech celebrate private-sector research and are right to do so. But big tech companies, like all companies, have an incentive to fund research that will support their bottom line,and the profit motive doesn’t always mean a focus on the most important problems.</string>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
-                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2HU-q7-dcJ">
-                                                <rect key="frame" x="15" y="688" width="384" height="100"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="0oX-yW-nnL"/>
-                                                </constraints>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="cL7-Ci-gT7" firstAttribute="top" secondItem="uvC-Ei-ENX" secondAttribute="top" constant="557.5" id="1Xw-bn-AhO"/>
-                                            <constraint firstItem="cL7-Ci-gT7" firstAttribute="leading" secondItem="uvC-Ei-ENX" secondAttribute="leading" constant="15" id="72l-mI-EKK"/>
-                                            <constraint firstAttribute="trailing" secondItem="cL7-Ci-gT7" secondAttribute="trailing" constant="15" id="7jp-gI-m3H"/>
-                                            <constraint firstItem="sob-ku-82e" firstAttribute="trailing" secondItem="Adw-FB-zW9" secondAttribute="trailing" id="CVE-H2-Bzq"/>
-                                            <constraint firstItem="Adw-FB-zW9" firstAttribute="leading" secondItem="uvC-Ei-ENX" secondAttribute="leading" constant="15" id="Cub-7d-MFC"/>
-                                            <constraint firstItem="2HU-q7-dcJ" firstAttribute="leading" secondItem="cL7-Ci-gT7" secondAttribute="leading" id="E6A-nB-pgj"/>
-                                            <constraint firstItem="2HU-q7-dcJ" firstAttribute="top" secondItem="LW2-1r-vQj" secondAttribute="bottom" constant="15" id="E76-Po-dwn"/>
-                                            <constraint firstAttribute="trailing" secondItem="Adw-FB-zW9" secondAttribute="trailing" constant="15" id="EcK-ui-ebS"/>
-                                            <constraint firstItem="ARa-zs-XsR" firstAttribute="leading" secondItem="cL7-Ci-gT7" secondAttribute="leading" id="FG3-aJ-T9o"/>
-                                            <constraint firstItem="ARa-zs-XsR" firstAttribute="trailing" secondItem="cL7-Ci-gT7" secondAttribute="trailing" id="Geb-hU-ySa"/>
-                                            <constraint firstAttribute="trailing" secondItem="2ke-Dp-HwQ" secondAttribute="trailing" constant="15" id="IB6-6s-y12"/>
-                                            <constraint firstItem="2HU-q7-dcJ" firstAttribute="trailing" secondItem="cL7-Ci-gT7" secondAttribute="trailing" id="Lo9-9H-893"/>
-                                            <constraint firstItem="Adw-FB-zW9" firstAttribute="top" secondItem="aJG-KY-6Wj" secondAttribute="bottom" constant="10" id="Myc-PO-EcR"/>
-                                            <constraint firstItem="LW2-1r-vQj" firstAttribute="trailing" secondItem="cL7-Ci-gT7" secondAttribute="trailing" id="Nk6-Gd-Hae"/>
-                                            <constraint firstItem="aJG-KY-6Wj" firstAttribute="top" secondItem="2ke-Dp-HwQ" secondAttribute="bottom" constant="10" id="RRi-aQ-nxl"/>
-                                            <constraint firstAttribute="bottom" secondItem="ARa-zs-XsR" secondAttribute="bottom" constant="50" id="Xbg-Xc-gR4"/>
-                                            <constraint firstItem="sob-ku-82e" firstAttribute="top" secondItem="Adw-FB-zW9" secondAttribute="bottom" constant="5" id="Ycq-aA-Djs"/>
-                                            <constraint firstItem="aJG-KY-6Wj" firstAttribute="leading" secondItem="2ke-Dp-HwQ" secondAttribute="leading" id="a6e-ar-6ah"/>
-                                            <constraint firstItem="LW2-1r-vQj" firstAttribute="top" secondItem="cL7-Ci-gT7" secondAttribute="bottom" constant="15" id="eOY-gY-ihP"/>
-                                            <constraint firstItem="2ke-Dp-HwQ" firstAttribute="leading" secondItem="uvC-Ei-ENX" secondAttribute="leading" constant="15" id="kcr-SS-Q0S"/>
-                                            <constraint firstItem="aJG-KY-6Wj" firstAttribute="trailing" secondItem="2ke-Dp-HwQ" secondAttribute="trailing" id="lx8-nN-hym"/>
-                                            <constraint firstItem="cL7-Ci-gT7" firstAttribute="top" secondItem="sob-ku-82e" secondAttribute="bottom" constant="15" id="pdy-fr-lf8"/>
-                                            <constraint firstItem="sob-ku-82e" firstAttribute="leading" secondItem="Adw-FB-zW9" secondAttribute="leading" id="qPY-nz-zvS"/>
-                                            <constraint firstItem="LW2-1r-vQj" firstAttribute="leading" secondItem="cL7-Ci-gT7" secondAttribute="leading" id="tKG-BR-SxX"/>
-                                            <constraint firstItem="ARa-zs-XsR" firstAttribute="top" secondItem="2HU-q7-dcJ" secondAttribute="bottom" constant="15" id="vdL-3r-oOw"/>
-                                            <constraint firstItem="cL7-Ci-gT7" firstAttribute="top" secondItem="sob-ku-82e" secondAttribute="bottom" constant="15" id="xVr-wu-DRA"/>
-                                            <constraint firstItem="2ke-Dp-HwQ" firstAttribute="top" secondItem="uvC-Ei-ENX" secondAttribute="top" constant="15" id="zes-ds-UtK"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstItem="uvC-Ei-ENX" firstAttribute="leading" secondItem="NMx-5o-pHQ" secondAttribute="leading" id="KRz-ym-qeB"/>
-                                    <constraint firstItem="uvC-Ei-ENX" firstAttribute="top" secondItem="NMx-5o-pHQ" secondAttribute="top" id="VWQ-Dn-Kzh"/>
-                                    <constraint firstAttribute="bottom" secondItem="uvC-Ei-ENX" secondAttribute="bottom" id="oHE-kx-bke"/>
-                                    <constraint firstAttribute="trailing" secondItem="uvC-Ei-ENX" secondAttribute="trailing" id="tKF-xw-vlB"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Pua-49-BiI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Pua-49-BiI" firstAttribute="bottom" secondItem="NMx-5o-pHQ" secondAttribute="bottom" id="2c4-t9-SPu"/>
-                            <constraint firstItem="uvC-Ei-ENX" firstAttribute="width" secondItem="piK-Zf-N8r" secondAttribute="width" id="4T4-7d-WsK"/>
-                            <constraint firstItem="uvC-Ei-ENX" firstAttribute="height" secondItem="piK-Zf-N8r" secondAttribute="height" priority="250" id="4Xh-Dm-Yla"/>
-                            <constraint firstItem="Pua-49-BiI" firstAttribute="trailing" secondItem="NMx-5o-pHQ" secondAttribute="trailing" id="D5w-M9-n3b"/>
-                            <constraint firstItem="NMx-5o-pHQ" firstAttribute="leading" secondItem="Pua-49-BiI" secondAttribute="leading" id="UFz-EJ-fbW"/>
-                            <constraint firstItem="NMx-5o-pHQ" firstAttribute="top" secondItem="Pua-49-BiI" secondAttribute="top" id="bno-Cv-rXz"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="dB5-Jv-80N"/>
-                    <connections>
-                        <outlet property="descriptionText" destination="ARa-zs-XsR" id="Koh-BR-Lt3"/>
-                        <outlet property="eventsView" destination="2HU-q7-dcJ" id="PxV-R3-kjq"/>
-                        <outlet property="playerView" destination="cL7-Ci-gT7" id="pEJ-rF-3rk"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TJA-VW-6r8" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="132" y="644"/>
-        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GoO-de-OkQ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="article-img-1" width="1024" height="683"/>
         <systemColor name="labelColor">

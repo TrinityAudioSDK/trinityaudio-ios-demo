@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var playerView: UIView!
     @IBOutlet weak var descriptionText: UILabel!
     @IBOutlet var eventsView: UITextView!
+    @IBOutlet weak var playerIdLb: UILabel!
     var autoPlay = false
     
     // Init Trinity Audio Player
@@ -75,7 +76,7 @@ class ViewController: UIViewController {
 extension ViewController: TrinityAudioDelegate {
     func trinity(service: any TrinityPlayer.TrinityAudioProtocol, onPlayerReady playerId: String) {
         print("player ready with playerId = \(playerId)")
-        
+        playerIdLb.text = "PlayerId: \(playerId)"
     }
     
     func trinity(service: TrinityAudioProtocol, receiveError: TrinityError) {
