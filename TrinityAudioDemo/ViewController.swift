@@ -8,49 +8,25 @@
 import UIKit
 import TrinityPlayer
 import WebKit
-import AppTrackingTransparency
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var playerView: UIView!
     @IBOutlet weak var descriptionText: UILabel!
     @IBOutlet var eventsView: UITextView!
+    @IBOutlet weak var playerIdLb: UILabel!
+    var autoPlay = false
     
     // Init Trinity Audio Player
-    var audio: TrinityAudioProtocol?
-    
+    private var audio: TrinityAudioProtocol?
+ 
     private var events = [[String: Any]]()
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        // If you don't need tracking the user using the IDFA, just call
-        // setupTrinityPlayer()
-        switch ATTrackingManager.trackingAuthorizationStatus {
-        case .authorized, .denied:
-            setupTrinityPlayer()
-        default:
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                ATTrackingManager.requestTrackingAuthorization { [weak self]  status in
-                    switch status {
-                    case .authorized:
-                        print("enable tracking")
-                    case .denied:
-                        print("disable tracking")
-                    default:
-                        print("notDetermined or restricted tracking")
-                    }
-                    DispatchQueue.main.async {
-                        self?.setupTrinityPlayer()
-                    }
-                }
-            })
-        }
+        self.descriptionText.text = AppContent.shared.article
+        setupTrinityPlayer()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -58,19 +34,15 @@ class ViewController: UIViewController {
         // invalidate player on disapper
         self.audio?.invalidate()
     }
-    
+
     // MARK: - View Helper Methods
-    func setupUI() {
-        self.descriptionText.text = AppContent.shared.article
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
-    
     func setupTrinityPlayer() {
         audio = TrinityAudio.newInstance()
         audio?.delegate = self
+        audio?.autoPlay = autoPlay
         self.showPlayer()
     }
-
+    
     func showPlayer() {
         if let url = URL(string: TAConstants.shared.contentURL) {
             // Pass nil for non FAB in fabViewTopLeftCoordingates parameter
@@ -82,10 +54,30 @@ class ViewController: UIViewController {
                           contentURL:url,settings: nil)
         }
     }
+    
+    @IBAction func play() {
+        audio?.play()
+        // or
+        //if let playerId = audio?.playerId {
+        //    audio?.play(playerID: playerId)
+        //}
+    }
+    
+    @IBAction func pause() {
+        if let playerId = audio?.playerId {
+            audio?.pause(playerID: playerId)
+        }
+        // or
+        // audio?.pauseAll()
+    }
 }
 
 // MARK: - TrinityAudio Delegate Methods
 extension ViewController: TrinityAudioDelegate {
+    func trinity(service: any TrinityPlayer.TrinityAudioProtocol, onPlayerReady playerId: String) {
+        print("player ready with playerId = \(playerId)")
+        playerIdLb.text = "PlayerId: \(playerId)"
+    }
     
     func trinity(service: TrinityAudioProtocol, receiveError: TrinityError) {
         print(receiveError)

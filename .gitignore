@@ -1,2 +1,7 @@
 
 .DS_Store
+*.xcarchive
+*.xcworkspacedata
+*.xccheckout
+*.xcuserdatad
+*.xcworkspace
