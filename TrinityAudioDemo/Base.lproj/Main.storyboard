@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -164,6 +164,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfd-Fp-wXv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="13.043478260869566" y="51.5625"/>
+        </scene>
+        <!--Pulse View Controller-->
+        <scene sceneID="jQE-qs-012">
+            <objects>
+                <viewController id="fuo-kr-1bS" customClass="PulseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mmz-W9-WHw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tz-vd-TsY" customClass="TrinityPlayerView" customModule="TrinityPlayer">
+                                <rect key="frame" x="57" y="162" width="300" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="CjS-G3-2yn"/>
+                                    <constraint firstAttribute="height" constant="350" id="I7o-9H-phV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSC-0O-xHv">
+                                <rect key="frame" x="0.0" y="48" width="62" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="Sdc-j1-iKv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="touchBack" destination="fuo-kr-1bS" eventType="touchUpInside" id="3tO-UG-YNJ"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cR-oq-fz6">
+                                <rect key="frame" x="20" y="520" width="374" height="38.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKH-PF-y9W">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                                        <connections>
+                                            <action selector="touchPlay" destination="fuo-kr-1bS" eventType="touchUpInside" id="KZg-Xr-60W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAG-3n-eQ8">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pause"/>
+                                        <connections>
+                                            <action selector="touchPause" destination="fuo-kr-1bS" eventType="touchUpInside" id="PdL-cE-pjm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hgn-00-bS2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2tz-vd-TsY" firstAttribute="top" secondItem="RSC-0O-xHv" secondAttribute="bottom" constant="75.5" id="57n-O3-SKo"/>
+                            <constraint firstItem="2tz-vd-TsY" firstAttribute="centerX" secondItem="mmz-W9-WHw" secondAttribute="centerX" id="7kx-SQ-O6o"/>
+                            <constraint firstItem="hgn-00-bS2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RSC-0O-xHv" secondAttribute="trailing" symbolic="YES" id="BPH-we-e1r"/>
+                            <constraint firstItem="0cR-oq-fz6" firstAttribute="top" secondItem="2tz-vd-TsY" secondAttribute="bottom" constant="8" id="IgF-FP-BB1"/>
+                            <constraint firstItem="0cR-oq-fz6" firstAttribute="leading" secondItem="hgn-00-bS2" secondAttribute="leading" constant="20" id="PQm-DG-cWv"/>
+                            <constraint firstItem="RSC-0O-xHv" firstAttribute="top" secondItem="hgn-00-bS2" secondAttribute="top" id="Qdj-fe-HQe"/>
+                            <constraint firstItem="hgn-00-bS2" firstAttribute="trailing" secondItem="0cR-oq-fz6" secondAttribute="trailing" constant="20" id="bwS-7f-oxA"/>
+                            <constraint firstItem="RSC-0O-xHv" firstAttribute="leading" secondItem="hgn-00-bS2" secondAttribute="leading" id="dnt-NN-BLS"/>
+                            <constraint firstItem="RSC-0O-xHv" firstAttribute="top" secondItem="hgn-00-bS2" secondAttribute="top" id="iHT-ty-WHC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Via-xj-RC5"/>
+                    <connections>
+                        <outlet property="triniyPlayerView" destination="2tz-vd-TsY" id="yyb-ct-gfR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sM5-9F-lAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="754"/>
         </scene>
     </scenes>
     <resources>

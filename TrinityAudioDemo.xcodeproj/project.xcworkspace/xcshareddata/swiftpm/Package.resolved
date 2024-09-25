@@ -1,4 +1,5 @@
 {
+  "originHash" : "a23b42ccf7382d7f0ed93dc0d5b1c30c7cff3d6211d146b443deec7fef1734ce",
   "pins" : [
     {
       "identity" : "trinityaudio-ios-sdk",
@@ -6,9 +7,9 @@
       "location" : "https://github.com/TrinityAudioSDK/trinityaudio-ios-sdk",
       "state" : {
         "branch" : "main",
-        "revision" : "6517b8781a14542ad762127cacbb3974f67b4931"
+        "revision" : "495bf95e6f37328c30cb4fee09ed7dd52fb43f4b"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
