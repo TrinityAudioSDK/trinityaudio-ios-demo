@@ -11,8 +11,15 @@ import TrinityPlayer
 
 class PulseViewController: UIViewController {
     @IBOutlet var triniyPlayerView: TrinityPlayerView!
+    @IBOutlet var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var playerIdLb: UILabel!
     
     var trinity: TrinityAudioPulseProtocol = TrinityAudioPulse.newInstance()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        trinity.delegate = self
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -39,5 +46,21 @@ class PulseViewController: UIViewController {
     
     @IBAction func touchPause() {
         trinity.pause(playerID: nil)
+    }
+}
+
+extension PulseViewController: TrinityAudioPulseDelegate {
+    func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, receiveError: TrinityPlayer.TrinityError) {
+        loadingIndicator.stopAnimating()
+    }
+    
+    func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, didReceivePostMessage: [String : Any]) {
+        
+    }
+    
+    func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, onPlayerReady playerId: String) {
+        loadingIndicator.stopAnimating()
+        print("player ready with playerId = \(playerId)")
+        playerIdLb.text = "PlayerId: \(playerId)"
     }
 }

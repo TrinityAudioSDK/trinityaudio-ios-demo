@@ -193,30 +193,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7v-9o-igY">
-                                <rect key="frame" x="131" y="380" width="152" height="39"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Main SDK Usage"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="42I-6m-AYn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dh-mh-Naz">
-                                <rect key="frame" x="161.5" y="451" width="91" height="39"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Autoplay"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="autoPlayFlow" id="GoO-de-OkQ"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8vP-9a-exm">
+                                <rect key="frame" x="131.5" y="358.5" width="151.5" height="179.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7v-9o-igY">
+                                        <rect key="frame" x="0.0" y="0.0" width="151.5" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Main SDK Usage"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="42I-6m-AYn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dh-mh-Naz">
+                                        <rect key="frame" x="30" y="70.5" width="91" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Autoplay"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="autoPlayFlow" id="GoO-de-OkQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCs-Nr-1T8" userLabel="Pulse Demo">
+                                        <rect key="frame" x="18" y="141" width="115" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pulse Demo"/>
+                                        <connections>
+                                            <segue destination="fuo-kr-1bS" kind="show" id="3t3-cj-RHJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mvw-el-lSP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="e7v-9o-igY" firstAttribute="centerX" secondItem="UKM-hQ-EHk" secondAttribute="centerX" id="4rV-0C-uxm"/>
-                            <constraint firstItem="e7v-9o-igY" firstAttribute="top" secondItem="mvw-el-lSP" secondAttribute="top" constant="288" id="bBs-u2-z5h"/>
-                            <constraint firstItem="2dh-mh-Naz" firstAttribute="centerX" secondItem="UKM-hQ-EHk" secondAttribute="centerX" id="h9i-yh-Zxu"/>
-                            <constraint firstItem="2dh-mh-Naz" firstAttribute="top" secondItem="e7v-9o-igY" secondAttribute="bottom" constant="32" id="jlE-dA-0cH"/>
+                            <constraint firstItem="8vP-9a-exm" firstAttribute="centerX" secondItem="UKM-hQ-EHk" secondAttribute="centerX" id="6Se-Gc-raJ"/>
+                            <constraint firstItem="8vP-9a-exm" firstAttribute="centerY" secondItem="UKM-hQ-EHk" secondAttribute="centerY" id="Vcs-TM-lNo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KPy-4u-gDB"/>
@@ -246,31 +257,26 @@
         <!--Pulse View Controller-->
         <scene sceneID="jQE-qs-012">
             <objects>
-                <viewController id="fuo-kr-1bS" customClass="PulseViewController" sceneMemberID="viewController">
+                <viewController id="fuo-kr-1bS" customClass="PulseViewController" customModule="TrinityAudioDemo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mmz-W9-WHw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tz-vd-TsY" customClass="TrinityPlayerView" customModule="TrinityPlayer">
-                                <rect key="frame" x="57" y="162" width="300" height="350"/>
+                                <rect key="frame" x="57" y="152" width="300" height="350"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="olw-42-FK8">
+                                        <rect key="frame" x="140" y="165" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="CjS-G3-2yn"/>
                                     <constraint firstAttribute="height" constant="350" id="I7o-9H-phV"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSC-0O-xHv">
-                                <rect key="frame" x="0.0" y="48" width="62" height="38.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="Sdc-j1-iKv"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
-                                <connections>
-                                    <action selector="touchBack" destination="fuo-kr-1bS" eventType="touchUpInside" id="3tO-UG-YNJ"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cR-oq-fz6">
-                                <rect key="frame" x="20" y="520" width="374" height="38.5"/>
+                                <rect key="frame" x="20" y="510" width="374" height="38.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKH-PF-y9W">
                                         <rect key="frame" x="0.0" y="0.0" width="187" height="38.5"/>
@@ -290,33 +296,40 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmE-m5-uWG">
+                                <rect key="frame" x="15" y="568.5" width="384" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hgn-00-bS2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2tz-vd-TsY" firstAttribute="top" secondItem="RSC-0O-xHv" secondAttribute="bottom" constant="75.5" id="57n-O3-SKo"/>
+                            <constraint firstItem="hgn-00-bS2" firstAttribute="trailing" secondItem="lmE-m5-uWG" secondAttribute="trailing" constant="15" id="4rA-vM-Daz"/>
                             <constraint firstItem="2tz-vd-TsY" firstAttribute="centerX" secondItem="mmz-W9-WHw" secondAttribute="centerX" id="7kx-SQ-O6o"/>
-                            <constraint firstItem="hgn-00-bS2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RSC-0O-xHv" secondAttribute="trailing" symbolic="YES" id="BPH-we-e1r"/>
+                            <constraint firstItem="lmE-m5-uWG" firstAttribute="leading" secondItem="hgn-00-bS2" secondAttribute="leading" constant="15" id="BFS-NX-gRb"/>
+                            <constraint firstItem="lmE-m5-uWG" firstAttribute="top" secondItem="0cR-oq-fz6" secondAttribute="bottom" constant="20" id="Dhm-2d-ZBq"/>
                             <constraint firstItem="0cR-oq-fz6" firstAttribute="top" secondItem="2tz-vd-TsY" secondAttribute="bottom" constant="8" id="IgF-FP-BB1"/>
                             <constraint firstItem="0cR-oq-fz6" firstAttribute="leading" secondItem="hgn-00-bS2" secondAttribute="leading" constant="20" id="PQm-DG-cWv"/>
-                            <constraint firstItem="RSC-0O-xHv" firstAttribute="top" secondItem="hgn-00-bS2" secondAttribute="top" id="Qdj-fe-HQe"/>
                             <constraint firstItem="hgn-00-bS2" firstAttribute="trailing" secondItem="0cR-oq-fz6" secondAttribute="trailing" constant="20" id="bwS-7f-oxA"/>
-                            <constraint firstItem="RSC-0O-xHv" firstAttribute="leading" secondItem="hgn-00-bS2" secondAttribute="leading" id="dnt-NN-BLS"/>
-                            <constraint firstItem="RSC-0O-xHv" firstAttribute="top" secondItem="hgn-00-bS2" secondAttribute="top" id="iHT-ty-WHC"/>
+                            <constraint firstItem="2tz-vd-TsY" firstAttribute="top" secondItem="hgn-00-bS2" secondAttribute="top" constant="60" id="h2M-b6-jxu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Via-xj-RC5"/>
                     <connections>
+                        <outlet property="loadingIndicator" destination="olw-42-FK8" id="ksN-hp-Vo7"/>
+                        <outlet property="playerIdLb" destination="lmE-m5-uWG" id="Zxk-1G-GpM"/>
                         <outlet property="triniyPlayerView" destination="2tz-vd-TsY" id="yyb-ct-gfR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sM5-9F-lAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="754"/>
+            <point key="canvasLocation" x="132" y="640"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GoO-de-OkQ"/>
+        <segue reference="42I-6m-AYn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="article-img-1" width="1024" height="683"/>
