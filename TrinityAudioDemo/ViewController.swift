@@ -44,11 +44,11 @@ class ViewController: UIViewController {
     }
     
     func showPlayer() {
-        if let url = URL(string: TAConstants.shared.contentURL) {
+        if let url = URL(string: TAConstants.shared.ttsContentURL) {
             // Pass nil for non FAB in fabViewTopLeftCoordingates parameter
             let coordinates = CGPoint(x: 30, y: self.view.frame.height-100)
             audio!.render(parentViewController: self,
-                          unitId: TAConstants.shared.unitID,
+                          unitId: TAConstants.shared.ttsUnitID,
                           sourceView: self.playerView,
                           fabViewTopLeftCoordinates: coordinates,
                           contentURL:url,settings: nil)
