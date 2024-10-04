@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 import TrinityPlayer
 
-class PulseViewController: UIViewController {
+class PulseSlidingViewController: UIViewController {
+    @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var triniyPlayerView: TrinityPlayerView!
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var playerIdLb: UILabel!
@@ -23,13 +24,15 @@ class PulseViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let trinityUnitID = TAConstants.shared.pulseUnitId
+        let trinityUnitID = TAConstants.shared.pulseSlidingUnitId
         if let playListURL = URL(string: TAConstants.shared.pulsePlaylistURL) {
             trinity.render(
                 unitId: trinityUnitID,
-                // For non-sliding unit ID:
-                // The `rootView` is the `playerView`'s superview.
-                rootView: self.view,
+                // Note for sliding unit ID:
+                // The `rootView` is the view that the `playerView` overlays when expanded.
+                // If the `playerView` is inside a scroll view, set the `rootView` to the scroll view.
+                // Otherwise, it should be the `playerView`'s superview, e.g., the ViewController's view.
+                rootView: self.scrollView,
                 playerView: triniyPlayerView,
                 playlistURL: playListURL,
                 settings: [:]
@@ -51,9 +54,9 @@ class PulseViewController: UIViewController {
     }
 }
 
-extension PulseViewController: TrinityAudioPulseDelegate {
+extension PulseSlidingViewController: TrinityAudioPulseDelegate {
     func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, onBrowseMode toggled: Bool) {
-
+        print("player onBrowseMode = \(toggled)")
     }
     
     func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, receiveError: TrinityPlayer.TrinityError) {

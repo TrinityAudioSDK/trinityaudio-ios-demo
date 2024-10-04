@@ -15,5 +15,6 @@ class TAConstants {
     let ttsContentURL = "https://demo.trinityaudio.ai/general-demo/demo.html"
     
     let pulseUnitId = "2900019020"
+    let pulseSlidingUnitId = "2900018783"
     let pulsePlaylistURL = "https://delivery.trinityaudio.ai/v1/playlist/6t9itl7j/rss"
 }

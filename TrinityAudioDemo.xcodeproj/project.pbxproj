@@ -14,6 +14,7 @@
 		259B27E526299AAA0037C114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259B27E326299AAA0037C114 /* LaunchScreen.storyboard */; };
 		259B27F226299AEA0037C114 /* TAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259B27F126299AEA0037C114 /* TAConstants.swift */; };
 		259B27FA26299BF30037C114 /* AppContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259B27F926299BF30037C114 /* AppContent.swift */; };
+		944EB4AD2CAFF7FA001A20EF /* PulseSlidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EB4AC2CAFF7FA001A20EF /* PulseSlidingViewController.swift */; };
 		9475A22E2C4A46E400A0B06E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475A22D2C4A46E400A0B06E /* MenuViewController.swift */; };
 		949251C42CA3B4C9000907EC /* PulseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949251C32CA3B4C9000907EC /* PulseViewController.swift */; };
 		94F4DB732AA4D7AB00080288 /* TrinityPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 94F4DB722AA4D7AB00080288 /* TrinityPlayer */; };
@@ -29,6 +30,7 @@
 		259B27E626299AAA0037C114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		259B27F126299AEA0037C114 /* TAConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAConstants.swift; sourceTree = "<group>"; };
 		259B27F926299BF30037C114 /* AppContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContent.swift; sourceTree = "<group>"; };
+		944EB4AC2CAFF7FA001A20EF /* PulseSlidingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseSlidingViewController.swift; sourceTree = "<group>"; };
 		9475A22D2C4A46E400A0B06E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		949251C32CA3B4C9000907EC /* PulseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				259B27DC26299AAA0037C114 /* ViewController.swift */,
 				9475A22D2C4A46E400A0B06E /* MenuViewController.swift */,
 				949251C32CA3B4C9000907EC /* PulseViewController.swift */,
+				944EB4AC2CAFF7FA001A20EF /* PulseSlidingViewController.swift */,
 				259B27DE26299AAA0037C114 /* Main.storyboard */,
 				259B27E126299AAA0037C114 /* Assets.xcassets */,
 				259B27E326299AAA0037C114 /* LaunchScreen.storyboard */,
@@ -173,6 +176,7 @@
 			files = (
 				949251C42CA3B4C9000907EC /* PulseViewController.swift in Sources */,
 				259B27F226299AEA0037C114 /* TAConstants.swift in Sources */,
+				944EB4AD2CAFF7FA001A20EF /* PulseSlidingViewController.swift in Sources */,
 				9475A22E2C4A46E400A0B06E /* MenuViewController.swift in Sources */,
 				259B27DD26299AAA0037C114 /* ViewController.swift in Sources */,
 				259B27FA26299BF30037C114 /* AppContent.swift in Sources */,

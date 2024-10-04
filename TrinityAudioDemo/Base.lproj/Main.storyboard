@@ -194,10 +194,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8vP-9a-exm">
-                                <rect key="frame" x="131.5" y="358.5" width="151.5" height="179.5"/>
+                                <rect key="frame" x="121.5" y="323" width="171" height="250"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7v-9o-igY">
-                                        <rect key="frame" x="0.0" y="0.0" width="151.5" height="38.5"/>
+                                        <rect key="frame" x="10" y="0.0" width="151.5" height="38.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Main SDK Usage"/>
                                         <connections>
@@ -205,7 +205,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dh-mh-Naz">
-                                        <rect key="frame" x="30" y="70.5" width="91" height="38.5"/>
+                                        <rect key="frame" x="40" y="70.5" width="91" height="38.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Autoplay"/>
                                         <connections>
@@ -213,11 +213,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCs-Nr-1T8" userLabel="Pulse Demo">
-                                        <rect key="frame" x="18" y="141" width="115" height="38.5"/>
+                                        <rect key="frame" x="28" y="141" width="115" height="38.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Pulse Demo"/>
                                         <connections>
                                             <segue destination="fuo-kr-1bS" kind="show" id="3t3-cj-RHJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5y-pG-KO8">
+                                        <rect key="frame" x="0.0" y="211.5" width="171" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pulse Sliding Demo"/>
+                                        <connections>
+                                            <segue destination="BWb-KJ-lcg" kind="show" id="YNS-KF-1NV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -325,7 +333,189 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sM5-9F-lAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="640"/>
+            <point key="canvasLocation" x="-1029" y="638"/>
+        </scene>
+        <!--Pulse Sliding View Controller-->
+        <scene sceneID="813-BG-U86">
+            <objects>
+                <viewController id="BWb-KJ-lcg" customClass="PulseSlidingViewController" customModule="TrinityAudioDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6qH-77-99C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pG-KI-L8p">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djS-Lf-Rhe">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2330.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artificial Intelligence Is Too Important to Leave to Google and Facebook Alone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqp-Cf-xCA">
+                                                <rect key="frame" x="15" y="5" width="384" height="158.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s develop a public research consortium to take on useful projects that have no commercial prospects." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIP-gO-7ef">
+                                                <rect key="frame" x="15" y="163.5" width="384" height="75.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75.5" id="Yzq-rv-ASv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article-img-1" translatesAutoresizingMaskIntoConstraints="NO" id="soD-Hz-aTN">
+                                                <rect key="frame" x="15" y="249" width="384" height="255"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="soD-Hz-aTN" secondAttribute="height" multiplier="268:178" id="Caq-il-zUL"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Deep Blue Technology self-driving bus at the World Artificial Intelligence Conference in Shanghai last May." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuO-tH-jCQ">
+                                                <rect key="frame" x="15" y="509" width="384" height="33.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33.5" id="lTP-XU-foh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1Z-HA-7cb" customClass="TrinityPlayerView" customModule="TrinityPlayer">
+                                                <rect key="frame" x="0.0" y="557.5" width="414" height="135"/>
+                                                <subviews>
+                                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="m9I-h4-zDG">
+                                                        <rect key="frame" x="197" y="57.5" width="20" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </activityIndicatorView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="135" id="Q7i-Ov-Wub"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nL8-ZB-cMj">
+                                                <rect key="frame" x="0.0" y="702.5" width="414" height="64"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb8-h2-Pe8" userLabel="Play">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="64"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                                                        <connections>
+                                                            <action selector="touchPlay" destination="BWb-KJ-lcg" eventType="touchUpInside" id="Rzw-Hc-ucM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9H-Md-7UD" userLabel="Pause">
+                                                        <rect key="frame" x="183.5" y="0.0" width="230.5" height="64"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Pause"/>
+                                                        <connections>
+                                                            <action selector="touchPause" destination="BWb-KJ-lcg" eventType="touchUpInside" id="xaY-CH-LnP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="b6t-zk-nzf"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="if1-iD-bfc"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POE-ev-lpS">
+                                                <rect key="frame" x="0.0" y="812.5" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Id: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3f-7B-gEb">
+                                                <rect key="frame" x="15" y="697.5" width="384" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIf-um-bAU">
+                                                <rect key="frame" x="0.0" y="963" width="414" height="1317.5"/>
+                                                <string key="text">Americans don’t have to be beholden to the tech Goliaths to get the benefits of artificial intelligence. An alternative possibility is for government to provide the infrastructure needed for a technological future — through a public option for artificial intelligence.Big tech companies have an extraordinary amount of data about how we behave, largely because they engage in  widespread surveillance of much of our behavior. Because A.I. depends on data, these companies have a huge market advantage over start-ups and entrepreneurs — and it’s a gap that will only get wider.The lax regulatory environment hasn’t helped, either; instead, it has allowed the biggest tech companies to acquire their rivals, stifle competition and snatch up the best software engineers and data scientists. Together, these dynamics make it hard for start-ups, governments and nonprofits to develop and use artificial intelligence without relying on big tech companies, effectively ceding influence over this developing field to a private sphere distorted by anti-competitive practices.\n\n\nThe alternative is a public option for A.I. The public option, a term familiar from debates over health care, is a public program that provides universal access to goods and services, with a private opt-out. A public option for A.I. wouldn’t prevent companies like Google from collecting and using data. But it would provide a pathway for start-ups and public-sector organizations to develop abilities and products that would compete with those of the tech giants. Although the Trump administration released an executive order on A.I. this year, we believe that a broader conceptual framework for the public option for A.I. — coupled with significant financial resources from Congress — is an opportunity for all levels of government to take control of technology for their constituents and engage them deeply in the development of the rules by which it is governed and used.\n\n\nOur proposal has three components: The first is a public data pool that would make data accessible to registered users. Local, state and federal governments have sizable data resources that would seed this digital commons. Users would be verified to block foreign governments, hackers and others with ill motives from access, and users would be prevented from using the data to engage in racial or other forms of discrimination and for microtargeted advertising.\n\n\nSome of the data may be very sensitive, and access to those resources would be highly regulated. We can imagine a variety of ways that regulation and technology together could protect privacy and still foster innovation: Data could be anonymized at the source; the commons could have an interface that allowed users to derive insight from the data set, while leaving the underlying information inaccessible; less sensitive data, like weather information, could be made available in a format optimized for training A.I. What’s more,methods for safely sharing A.I. models without disclosing the underlying data are being developed today and could enable users of the data commons to collaborate on public-interest A.I. services. The federal government should also invest in researching new and better ways to protect privacy and prevent misuse.\n\n\nSecond, a public option for artificial intelligence would include a significant increase in research and development spending. Proponents of big tech celebrate private-sector research and are right to do so. But big tech companies, like all companies, have an incentive to fund research that will support their bottom line,and the profit motive doesn’t always mean a focus on the most important problems.</string>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csx-Cj-vmX">
+                                                <rect key="frame" x="0.0" y="848" width="414" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="61l-Gl-GnO"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="hqp-Cf-xCA" firstAttribute="leading" secondItem="djS-Lf-Rhe" secondAttribute="leading" constant="15" id="0fF-iE-QAa"/>
+                                            <constraint firstItem="HuO-tH-jCQ" firstAttribute="leading" secondItem="soD-Hz-aTN" secondAttribute="leading" id="0oX-AK-OCq"/>
+                                            <constraint firstAttribute="trailing" secondItem="K1Z-HA-7cb" secondAttribute="trailing" id="6pw-VZ-veW"/>
+                                            <constraint firstItem="K1Z-HA-7cb" firstAttribute="leading" secondItem="djS-Lf-Rhe" secondAttribute="leading" id="AqV-3v-THl"/>
+                                            <constraint firstItem="bIf-um-bAU" firstAttribute="leading" secondItem="K1Z-HA-7cb" secondAttribute="leading" id="B7X-tX-ZVM"/>
+                                            <constraint firstItem="csx-Cj-vmX" firstAttribute="leading" secondItem="K1Z-HA-7cb" secondAttribute="leading" id="Dkp-kM-ea4"/>
+                                            <constraint firstItem="y3f-7B-gEb" firstAttribute="top" secondItem="K1Z-HA-7cb" secondAttribute="bottom" constant="5" id="E1w-sU-ANV"/>
+                                            <constraint firstItem="csx-Cj-vmX" firstAttribute="top" secondItem="POE-ev-lpS" secondAttribute="bottom" constant="15" id="Eut-CE-lSw"/>
+                                            <constraint firstItem="soD-Hz-aTN" firstAttribute="leading" secondItem="djS-Lf-Rhe" secondAttribute="leading" constant="15" id="ExP-cs-efH"/>
+                                            <constraint firstAttribute="trailing" secondItem="nL8-ZB-cMj" secondAttribute="trailing" id="FMw-ud-l9k"/>
+                                            <constraint firstAttribute="trailing" secondItem="y3f-7B-gEb" secondAttribute="trailing" constant="15" id="KeR-5H-jaI"/>
+                                            <constraint firstItem="UIP-gO-7ef" firstAttribute="leading" secondItem="hqp-Cf-xCA" secondAttribute="leading" id="Mol-F0-SiC"/>
+                                            <constraint firstItem="K1Z-HA-7cb" firstAttribute="top" secondItem="HuO-tH-jCQ" secondAttribute="bottom" constant="15" id="NrQ-3M-BQy"/>
+                                            <constraint firstItem="POE-ev-lpS" firstAttribute="trailing" secondItem="K1Z-HA-7cb" secondAttribute="trailing" id="Pmd-tm-UDv"/>
+                                            <constraint firstItem="K1Z-HA-7cb" firstAttribute="top" secondItem="HuO-tH-jCQ" secondAttribute="bottom" constant="15" id="Qvq-fK-87R"/>
+                                            <constraint firstAttribute="trailing" secondItem="soD-Hz-aTN" secondAttribute="trailing" constant="15" id="US4-WF-ijA"/>
+                                            <constraint firstItem="POE-ev-lpS" firstAttribute="leading" secondItem="K1Z-HA-7cb" secondAttribute="leading" id="X2f-lg-rN7"/>
+                                            <constraint firstAttribute="bottom" secondItem="bIf-um-bAU" secondAttribute="bottom" constant="50" id="XVl-EU-mzA"/>
+                                            <constraint firstItem="bIf-um-bAU" firstAttribute="trailing" secondItem="K1Z-HA-7cb" secondAttribute="trailing" id="Z1l-oT-Vw0"/>
+                                            <constraint firstItem="hqp-Cf-xCA" firstAttribute="top" secondItem="djS-Lf-Rhe" secondAttribute="top" constant="5" id="a80-EZ-mTs"/>
+                                            <constraint firstItem="UIP-gO-7ef" firstAttribute="trailing" secondItem="hqp-Cf-xCA" secondAttribute="trailing" id="bD9-LS-3NJ"/>
+                                            <constraint firstItem="y3f-7B-gEb" firstAttribute="leading" secondItem="djS-Lf-Rhe" secondAttribute="leading" constant="15" id="cwO-0O-vzW"/>
+                                            <constraint firstItem="nL8-ZB-cMj" firstAttribute="leading" secondItem="djS-Lf-Rhe" secondAttribute="leading" id="dfQ-lZ-sh2"/>
+                                            <constraint firstItem="K1Z-HA-7cb" firstAttribute="top" secondItem="djS-Lf-Rhe" secondAttribute="top" constant="557.5" id="dxR-ed-Los"/>
+                                            <constraint firstItem="UIP-gO-7ef" firstAttribute="top" secondItem="hqp-Cf-xCA" secondAttribute="bottom" id="enK-1V-Ycr"/>
+                                            <constraint firstAttribute="trailing" secondItem="hqp-Cf-xCA" secondAttribute="trailing" constant="15" id="iG2-y1-7ve"/>
+                                            <constraint firstItem="nL8-ZB-cMj" firstAttribute="top" secondItem="K1Z-HA-7cb" secondAttribute="bottom" constant="10" id="iH2-k4-QEF"/>
+                                            <constraint firstItem="soD-Hz-aTN" firstAttribute="top" secondItem="UIP-gO-7ef" secondAttribute="bottom" constant="10" id="jUQ-VH-IVd"/>
+                                            <constraint firstItem="bIf-um-bAU" firstAttribute="top" secondItem="csx-Cj-vmX" secondAttribute="bottom" constant="15" id="jyS-iK-UZ4"/>
+                                            <constraint firstItem="HuO-tH-jCQ" firstAttribute="trailing" secondItem="soD-Hz-aTN" secondAttribute="trailing" id="nGZ-rR-ulR"/>
+                                            <constraint firstItem="csx-Cj-vmX" firstAttribute="trailing" secondItem="K1Z-HA-7cb" secondAttribute="trailing" id="ojM-VB-fv9"/>
+                                            <constraint firstItem="POE-ev-lpS" firstAttribute="top" secondItem="K1Z-HA-7cb" secondAttribute="bottom" constant="120" id="tzy-6l-js5"/>
+                                            <constraint firstItem="HuO-tH-jCQ" firstAttribute="top" secondItem="soD-Hz-aTN" secondAttribute="bottom" constant="5" id="vbm-8U-gj1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="djS-Lf-Rhe" firstAttribute="top" secondItem="8pG-KI-L8p" secondAttribute="top" id="6uD-BU-ndP"/>
+                                    <constraint firstAttribute="trailing" secondItem="djS-Lf-Rhe" secondAttribute="trailing" id="8Uw-Qw-mrV"/>
+                                    <constraint firstAttribute="bottom" secondItem="djS-Lf-Rhe" secondAttribute="bottom" id="fRm-WL-rlg"/>
+                                    <constraint firstItem="djS-Lf-Rhe" firstAttribute="leading" secondItem="8pG-KI-L8p" secondAttribute="leading" id="i3b-jw-rfq"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="40k-EZ-eek"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="40k-EZ-eek" firstAttribute="bottom" secondItem="8pG-KI-L8p" secondAttribute="bottom" id="NOv-hO-g1L"/>
+                            <constraint firstItem="8pG-KI-L8p" firstAttribute="top" secondItem="40k-EZ-eek" secondAttribute="top" id="Ugo-Dd-WKA"/>
+                            <constraint firstItem="8pG-KI-L8p" firstAttribute="leading" secondItem="40k-EZ-eek" secondAttribute="leading" id="Utv-Mc-QQG"/>
+                            <constraint firstItem="40k-EZ-eek" firstAttribute="trailing" secondItem="8pG-KI-L8p" secondAttribute="trailing" id="WQv-Z4-Uo9"/>
+                            <constraint firstItem="djS-Lf-Rhe" firstAttribute="height" secondItem="6qH-77-99C" secondAttribute="height" priority="250" id="ada-Vx-0kq"/>
+                            <constraint firstItem="djS-Lf-Rhe" firstAttribute="width" secondItem="6qH-77-99C" secondAttribute="width" id="kHn-aP-qvt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="q0Z-XD-Qf7"/>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="m9I-h4-zDG" id="dzj-nA-6Nr"/>
+                        <outlet property="playerIdLb" destination="y3f-7B-gEb" id="QXf-cU-yXe"/>
+                        <outlet property="scrollView" destination="8pG-KI-L8p" id="i0N-C9-Szk"/>
+                        <outlet property="triniyPlayerView" destination="K1Z-HA-7cb" id="Wqd-1S-WQt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9BX-DN-60S" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="638"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
