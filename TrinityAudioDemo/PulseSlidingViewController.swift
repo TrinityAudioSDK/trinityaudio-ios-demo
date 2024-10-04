@@ -1,8 +1,8 @@
 //
-//  PulseViewController.swift
+//  PulseSlidingViewController.swift
 //  TrinityAudioDemo
 //
-//  Created by Kenji Hung Pham on 25/9/24.
+//  Created by Kenji Hung Pham on 4/10/24.
 //
 
 import Foundation
