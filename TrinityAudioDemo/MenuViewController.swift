@@ -10,11 +10,16 @@ import UIKit
 import AppTrackingTransparency
 
 class MenuViewController: UIViewController {
-    static let autoPlayFlow = "autoPlayFlow"
+    static let ttsAutoPlayFlow = "ttsAutoPlayFlow"
+    static let pulseAutoPlayFlow = "pulseAutoPlayFlow"
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == MenuViewController.autoPlayFlow {
+        if segue.identifier == MenuViewController.ttsAutoPlayFlow {
             let mainUsageViewController : ViewController = segue.destination as! ViewController
             mainUsageViewController.autoPlay = true
+        }
+        if segue.identifier == MenuViewController.pulseAutoPlayFlow {
+            let pulseSlidingViewController : PulseSlidingViewController = segue.destination as! PulseSlidingViewController
+            pulseSlidingViewController.autoPlay = true
         }
     }
     

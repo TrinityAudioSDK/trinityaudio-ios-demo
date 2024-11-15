@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eNR-Ie-L7l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eNR-Ie-L7l">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -194,7 +194,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8vP-9a-exm">
-                                <rect key="frame" x="121.5" y="323" width="171" height="250"/>
+                                <rect key="frame" x="121.5" y="288" width="171" height="320.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7v-9o-igY">
                                         <rect key="frame" x="10" y="0.0" width="151.5" height="38.5"/>
@@ -205,11 +205,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dh-mh-Naz">
-                                        <rect key="frame" x="40" y="70.5" width="91" height="38.5"/>
+                                        <rect key="frame" x="22.5" y="70.5" width="126" height="38.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Autoplay"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="TTS Autoplay"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" identifier="autoPlayFlow" id="GoO-de-OkQ"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="ttsAutoPlayFlow" id="GoO-de-OkQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCs-Nr-1T8" userLabel="Pulse Demo">
@@ -225,7 +225,15 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Pulse Sliding Demo"/>
                                         <connections>
-                                            <segue destination="BWb-KJ-lcg" kind="show" id="YNS-KF-1NV"/>
+                                            <segue destination="BWb-KJ-lcg" kind="show" identifier="" id="YNS-KF-1NV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRo-Gu-miA">
+                                        <rect key="frame" x="17.5" y="282" width="136.5" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pulse Autoplay"/>
+                                        <connections>
+                                            <segue destination="BWb-KJ-lcg" kind="show" identifier="pulseAutoPlayFlow" id="jcc-78-ekd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -347,16 +355,16 @@
                                 <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djS-Lf-Rhe">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2330.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2320.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artificial Intelligence Is Too Important to Leave to Google and Facebook Alone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqp-Cf-xCA">
-                                                <rect key="frame" x="15" y="5" width="384" height="158.5"/>
+                                                <rect key="frame" x="15" y="5" width="384" height="138.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s develop a public research consortium to take on useful projects that have no commercial prospects." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIP-gO-7ef">
-                                                <rect key="frame" x="15" y="163.5" width="384" height="75.5"/>
+                                                <rect key="frame" x="15" y="143.5" width="384" height="75.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="75.5" id="Yzq-rv-ASv"/>
                                                 </constraints>
@@ -365,13 +373,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article-img-1" translatesAutoresizingMaskIntoConstraints="NO" id="soD-Hz-aTN">
-                                                <rect key="frame" x="15" y="249" width="384" height="255"/>
+                                                <rect key="frame" x="15" y="229" width="384" height="255"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="soD-Hz-aTN" secondAttribute="height" multiplier="268:178" id="Caq-il-zUL"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Deep Blue Technology self-driving bus at the World Artificial Intelligence Conference in Shanghai last May." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuO-tH-jCQ">
-                                                <rect key="frame" x="15" y="509" width="384" height="33.5"/>
+                                                <rect key="frame" x="15" y="489" width="384" height="33.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33.5" id="lTP-XU-foh"/>
                                                 </constraints>
@@ -380,20 +388,20 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1Z-HA-7cb" customClass="TrinityPlayerView" customModule="TrinityPlayer">
-                                                <rect key="frame" x="0.0" y="557.5" width="414" height="135"/>
+                                                <rect key="frame" x="0.0" y="537.5" width="414" height="145"/>
                                                 <subviews>
                                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="m9I-h4-zDG">
-                                                        <rect key="frame" x="197" y="57.5" width="20" height="20"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <rect key="frame" x="197" y="57" width="20" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     </activityIndicatorView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="135" id="Q7i-Ov-Wub"/>
+                                                    <constraint firstAttribute="height" constant="145" id="Q7i-Ov-Wub"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nL8-ZB-cMj">
-                                                <rect key="frame" x="0.0" y="702.5" width="414" height="64"/>
+                                                <rect key="frame" x="0.0" y="692.5" width="414" height="64"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb8-h2-Pe8" userLabel="Play">
                                                         <rect key="frame" x="0.0" y="0.0" width="183.5" height="64"/>
@@ -418,26 +426,26 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POE-ev-lpS">
-                                                <rect key="frame" x="0.0" y="812.5" width="414" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="802.5" width="414" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Id: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3f-7B-gEb">
-                                                <rect key="frame" x="15" y="697.5" width="384" height="17"/>
+                                                <rect key="frame" x="15" y="687.5" width="384" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIf-um-bAU">
-                                                <rect key="frame" x="0.0" y="963" width="414" height="1317.5"/>
+                                                <rect key="frame" x="0.0" y="953" width="414" height="1317.5"/>
                                                 <string key="text">Americans don’t have to be beholden to the tech Goliaths to get the benefits of artificial intelligence. An alternative possibility is for government to provide the infrastructure needed for a technological future — through a public option for artificial intelligence.Big tech companies have an extraordinary amount of data about how we behave, largely because they engage in  widespread surveillance of much of our behavior. Because A.I. depends on data, these companies have a huge market advantage over start-ups and entrepreneurs — and it’s a gap that will only get wider.The lax regulatory environment hasn’t helped, either; instead, it has allowed the biggest tech companies to acquire their rivals, stifle competition and snatch up the best software engineers and data scientists. Together, these dynamics make it hard for start-ups, governments and nonprofits to develop and use artificial intelligence without relying on big tech companies, effectively ceding influence over this developing field to a private sphere distorted by anti-competitive practices.\n\n\nThe alternative is a public option for A.I. The public option, a term familiar from debates over health care, is a public program that provides universal access to goods and services, with a private opt-out. A public option for A.I. wouldn’t prevent companies like Google from collecting and using data. But it would provide a pathway for start-ups and public-sector organizations to develop abilities and products that would compete with those of the tech giants. Although the Trump administration released an executive order on A.I. this year, we believe that a broader conceptual framework for the public option for A.I. — coupled with significant financial resources from Congress — is an opportunity for all levels of government to take control of technology for their constituents and engage them deeply in the development of the rules by which it is governed and used.\n\n\nOur proposal has three components: The first is a public data pool that would make data accessible to registered users. Local, state and federal governments have sizable data resources that would seed this digital commons. Users would be verified to block foreign governments, hackers and others with ill motives from access, and users would be prevented from using the data to engage in racial or other forms of discrimination and for microtargeted advertising.\n\n\nSome of the data may be very sensitive, and access to those resources would be highly regulated. We can imagine a variety of ways that regulation and technology together could protect privacy and still foster innovation: Data could be anonymized at the source; the commons could have an interface that allowed users to derive insight from the data set, while leaving the underlying information inaccessible; less sensitive data, like weather information, could be made available in a format optimized for training A.I. What’s more,methods for safely sharing A.I. models without disclosing the underlying data are being developed today and could enable users of the data commons to collaborate on public-interest A.I. services. The federal government should also invest in researching new and better ways to protect privacy and prevent misuse.\n\n\nSecond, a public option for artificial intelligence would include a significant increase in research and development spending. Proponents of big tech celebrate private-sector research and are right to do so. But big tech companies, like all companies, have an incentive to fund research that will support their bottom line,and the profit motive doesn’t always mean a focus on the most important problems.</string>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csx-Cj-vmX">
-                                                <rect key="frame" x="0.0" y="848" width="414" height="100"/>
+                                                <rect key="frame" x="0.0" y="838" width="414" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="61l-Gl-GnO"/>
@@ -463,7 +471,7 @@
                                             <constraint firstItem="UIP-gO-7ef" firstAttribute="leading" secondItem="hqp-Cf-xCA" secondAttribute="leading" id="Mol-F0-SiC"/>
                                             <constraint firstItem="K1Z-HA-7cb" firstAttribute="top" secondItem="HuO-tH-jCQ" secondAttribute="bottom" constant="15" id="NrQ-3M-BQy"/>
                                             <constraint firstItem="POE-ev-lpS" firstAttribute="trailing" secondItem="K1Z-HA-7cb" secondAttribute="trailing" id="Pmd-tm-UDv"/>
-                                            <constraint firstItem="K1Z-HA-7cb" firstAttribute="top" secondItem="HuO-tH-jCQ" secondAttribute="bottom" constant="15" id="Qvq-fK-87R"/>
+                                            <constraint firstItem="POE-ev-lpS" firstAttribute="top" secondItem="nL8-ZB-cMj" secondAttribute="bottom" constant="46" id="RRe-sY-DMd"/>
                                             <constraint firstAttribute="trailing" secondItem="soD-Hz-aTN" secondAttribute="trailing" constant="15" id="US4-WF-ijA"/>
                                             <constraint firstItem="POE-ev-lpS" firstAttribute="leading" secondItem="K1Z-HA-7cb" secondAttribute="leading" id="X2f-lg-rN7"/>
                                             <constraint firstAttribute="bottom" secondItem="bIf-um-bAU" secondAttribute="bottom" constant="50" id="XVl-EU-mzA"/>
@@ -472,7 +480,6 @@
                                             <constraint firstItem="UIP-gO-7ef" firstAttribute="trailing" secondItem="hqp-Cf-xCA" secondAttribute="trailing" id="bD9-LS-3NJ"/>
                                             <constraint firstItem="y3f-7B-gEb" firstAttribute="leading" secondItem="djS-Lf-Rhe" secondAttribute="leading" constant="15" id="cwO-0O-vzW"/>
                                             <constraint firstItem="nL8-ZB-cMj" firstAttribute="leading" secondItem="djS-Lf-Rhe" secondAttribute="leading" id="dfQ-lZ-sh2"/>
-                                            <constraint firstItem="K1Z-HA-7cb" firstAttribute="top" secondItem="djS-Lf-Rhe" secondAttribute="top" constant="557.5" id="dxR-ed-Los"/>
                                             <constraint firstItem="UIP-gO-7ef" firstAttribute="top" secondItem="hqp-Cf-xCA" secondAttribute="bottom" id="enK-1V-Ycr"/>
                                             <constraint firstAttribute="trailing" secondItem="hqp-Cf-xCA" secondAttribute="trailing" constant="15" id="iG2-y1-7ve"/>
                                             <constraint firstItem="nL8-ZB-cMj" firstAttribute="top" secondItem="K1Z-HA-7cb" secondAttribute="bottom" constant="10" id="iH2-k4-QEF"/>
@@ -480,7 +487,7 @@
                                             <constraint firstItem="bIf-um-bAU" firstAttribute="top" secondItem="csx-Cj-vmX" secondAttribute="bottom" constant="15" id="jyS-iK-UZ4"/>
                                             <constraint firstItem="HuO-tH-jCQ" firstAttribute="trailing" secondItem="soD-Hz-aTN" secondAttribute="trailing" id="nGZ-rR-ulR"/>
                                             <constraint firstItem="csx-Cj-vmX" firstAttribute="trailing" secondItem="K1Z-HA-7cb" secondAttribute="trailing" id="ojM-VB-fv9"/>
-                                            <constraint firstItem="POE-ev-lpS" firstAttribute="top" secondItem="K1Z-HA-7cb" secondAttribute="bottom" constant="120" id="tzy-6l-js5"/>
+                                            <constraint firstItem="POE-ev-lpS" firstAttribute="leading" secondItem="djS-Lf-Rhe" secondAttribute="leading" constant="8" id="rQQ-yp-eGl"/>
                                             <constraint firstItem="HuO-tH-jCQ" firstAttribute="top" secondItem="soD-Hz-aTN" secondAttribute="bottom" constant="5" id="vbm-8U-gj1"/>
                                         </constraints>
                                     </view>
@@ -508,7 +515,9 @@
                     <navigationItem key="navigationItem" id="q0Z-XD-Qf7"/>
                     <connections>
                         <outlet property="loadingIndicator" destination="m9I-h4-zDG" id="dzj-nA-6Nr"/>
+                        <outlet property="playerHeightConstraint" destination="Q7i-Ov-Wub" id="pJv-QK-Aub"/>
                         <outlet property="playerIdLb" destination="y3f-7B-gEb" id="QXf-cU-yXe"/>
+                        <outlet property="playerTopConstraint" destination="NrQ-3M-BQy" id="n12-ph-xkL"/>
                         <outlet property="scrollView" destination="8pG-KI-L8p" id="i0N-C9-Szk"/>
                         <outlet property="triniyPlayerView" destination="K1Z-HA-7cb" id="Wqd-1S-WQt"/>
                     </connections>
@@ -519,7 +528,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="42I-6m-AYn"/>
+        <segue reference="jcc-78-ekd"/>
+        <segue reference="GoO-de-OkQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="article-img-1" width="1024" height="683"/>
