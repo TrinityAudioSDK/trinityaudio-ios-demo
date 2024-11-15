@@ -17,7 +17,7 @@ class PulseSlidingViewController: UIViewController {
     @IBOutlet weak var playerHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var playerTopConstraint: NSLayoutConstraint!
     
-    var autoPlay = false
+    var autoPlay = true
     
     var trinity: TrinityAudioPulseProtocol = TrinityAudioPulse.newInstance()
     

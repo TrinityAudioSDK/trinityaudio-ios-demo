@@ -17,9 +17,9 @@ class MenuViewController: UIViewController {
             let mainUsageViewController : ViewController = segue.destination as! ViewController
             mainUsageViewController.autoPlay = true
         }
-        if segue.identifier == MenuViewController.pulseAutoPlayFlow {
-            let pulseSlidingViewController : PulseSlidingViewController = segue.destination as! PulseSlidingViewController
-            pulseSlidingViewController.autoPlay = true
+        
+        if let pulseSlidingViewController = segue.destination as? PulseSlidingViewController {
+            pulseSlidingViewController.autoPlay = segue.identifier == MenuViewController.pulseAutoPlayFlow
         }
     }
     
