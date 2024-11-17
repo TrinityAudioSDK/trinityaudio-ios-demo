@@ -14,6 +14,10 @@ class PulseSlidingViewController: UIViewController {
     @IBOutlet var triniyPlayerView: TrinityPlayerView!
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var playerIdLb: UILabel!
+    @IBOutlet weak var playerHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var playerTopConstraint: NSLayoutConstraint!
+    
+    var autoPlay = true
     
     var trinity: TrinityAudioPulseProtocol = TrinityAudioPulse.newInstance()
     
@@ -26,13 +30,11 @@ class PulseSlidingViewController: UIViewController {
         super.viewDidAppear(animated)
         let trinityUnitID = TAConstants.shared.pulseSlidingUnitId
         if let playListURL = URL(string: TAConstants.shared.pulsePlaylistURL) {
+            // Enable auto play before render the player
+            trinity.autoPlay = autoPlay
             trinity.render(
                 unitId: trinityUnitID,
-                // Note for sliding unit ID:
-                // The `rootView` is the view that the `playerView` overlays when expanded.
-                // If the `playerView` is inside a scroll view, set the `rootView` to the scroll view.
-                // Otherwise, it should be the `playerView`'s superview, e.g., the ViewController's view.
-                rootView: self.scrollView,
+                rootView: self.view,
                 playerView: triniyPlayerView,
                 playlistURL: playListURL,
                 settings: [:]
@@ -55,8 +57,29 @@ class PulseSlidingViewController: UIViewController {
 }
 
 extension PulseSlidingViewController: TrinityAudioPulseDelegate {
-    func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, onBrowseMode toggled: Bool) {
+    
+    func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, onBrowseMode toggled: Bool, expectedHeight: CGFloat) {
         print("player onBrowseMode = \(toggled)")
+        let animationDurration = 0.3
+        
+        let topConstraintValue = self.playerTopConstraint.constant
+        let currentHeight = self.playerHeightConstraint.constant
+        let diff = currentHeight - expectedHeight
+        let newTopConstraintValue = topConstraintValue + diff
+        
+        if (toggled) {
+            self.playerHeightConstraint.constant = expectedHeight
+            self.playerTopConstraint.constant = newTopConstraintValue
+            UIView.animate(withDuration: animationDurration) {
+                self.view.layoutIfNeeded()
+            }
+        } else {
+            self.playerTopConstraint.constant = newTopConstraintValue
+            self.playerHeightConstraint.constant = expectedHeight
+            UIView.animate(withDuration: animationDurration) {
+                self.view.layoutIfNeeded()
+            }
+        }
     }
     
     func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, receiveError: TrinityPlayer.TrinityError) {

@@ -27,8 +27,6 @@ class PulseViewController: UIViewController {
         if let playListURL = URL(string: TAConstants.shared.pulsePlaylistURL) {
             trinity.render(
                 unitId: trinityUnitID,
-                // For non-sliding unit ID:
-                // The `rootView` is the `playerView`'s superview.
                 rootView: self.view,
                 playerView: triniyPlayerView,
                 playlistURL: playListURL,
@@ -52,8 +50,9 @@ class PulseViewController: UIViewController {
 }
 
 extension PulseViewController: TrinityAudioPulseDelegate {
-    func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, onBrowseMode toggled: Bool) {
 
+    func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, onBrowseMode toggled: Bool, expectedHeight: CGFloat) {
+        // Will not be called if the unit is not support sliding effect
     }
     
     func trinity(service: any TrinityPlayer.TrinityAudioPulseProtocol, receiveError: TrinityPlayer.TrinityError) {
